@@ -3,13 +3,24 @@
             id="1f7d-0c61-7e6a-4cc6"
             name="Bolt Action 3ed"
             battleScribeVersion="2.03"
-            revision="16"
+            revision="17"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
   <costTypes>
     <costType name="Points" id="d4a9-f78c-67cc-4b69" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
+  <profileTypes>
+    <profileType name="Army Book Unit" id="9b00-0000-0000-0001">
+      <characteristicTypes>
+        <characteristicType name="Period" id="9b01-0000-0000-0001"/>
+        <characteristicType name="Composition / Type" id="9b01-0000-0000-0002"/>
+        <characteristicType name="Weapons" id="9b01-0000-0000-0003"/>
+        <characteristicType name="Rules and options" id="9b01-0000-0000-0004"/>
+        <characteristicType name="Army Book" id="9b01-0000-0000-0005"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
   <categoryEntries>
     <categoryEntry name="Command" id="2b35-7c65-b12a-4aca" hidden="false"/>
     <categoryEntry name="Infantry" id="d42d-87f6-d04b-43db" hidden="false"/>

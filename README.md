@@ -25,6 +25,8 @@ Plików `.ros` i `.rosz` na razie nie wrzucaj — najpierw testujemy tworzenie p
 - konfiguracja Heer Squad ma wymuszoną kolejność: Unit Quality, NCO, LMG Team, Riflemen i na końcu Squad Options; wspólne bronie mają stałą liczebność 1/1;
 - plutony są sekcjami jednej `Army List` (Rifle, Heavy Weapons, Artillery i Armoured), więc nie wymagają używania `Duplicate Force`;
 - warunki opcji drużyny uwzględniają zagnieżdżoną sekcję Squad Options, dzięki czemu LMG ponownie dodaje Gunnera i Loadera do listy;
+- LMG Gunner i Loader są obowiązkowymi modelami zagnieżdżonymi bezpośrednio w pojedynczej opcji LMG, więc zawsze pojawiają się po jej wybraniu;
+- wszystkie 17 dostępnych jednostek ma profil Army Book z okresem, składem lub typem, uzbrojeniem, zasadami i numerem strony źródłowej;
 - okres jednostki nie jest dopisywany do jej nazwy; jest widoczny w profilu przez techniczne kategorie zgodne z army bookiem;
 - NCO i Riflemani mają Rifle ustawiony jako wybór domyślny, a opcja LMG Team jest uporządkowana na końcu listy opcji;
 - Panzer III Ausf. L/M i Ausf. N są dostępne wyłącznie jako Regular lub Veteran, zgodnie z Armies of Germany: Third Edition;
