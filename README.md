@@ -1,4 +1,4 @@
-# Bolt Action 3E – Minimal DAK v0.2
+# Bolt Action 3E – Configurable DAK v0.4
 
 Poprawka błędu ładowania Army Book w NewRecruit.
 
@@ -11,3 +11,10 @@ Najważniejsza zmiana:
 ## Aktualizacja
 Usuń lub zastąp w repozytorium stare pliki `.gst` i `.cat` tymi z paczki.
 Plików `.ros` i `.rosz` na razie nie wrzucaj — najpierw testujemy tworzenie pustej listy.
+
+## Konfiguracja jednostek
+
+- jednostkę dodaje się do odpowiedniego plutonu, a doświadczenie i wyposażenie wybiera się wewnątrz jej wpisu;
+- dwa gotowe warianty Heer Infantry Squad zastąpiono jednym konfigurowalnym oddziałem;
+- Panzer III Ausf. L/M i Ausf. N są dostępne wyłącznie jako Regular lub Veteran, zgodnie z Armies of Germany: Third Edition;
+- stare wpisy pozostają ukryte, aby wcześniejsze roster files nadal mogły je rozwiązać.
