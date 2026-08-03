@@ -3,7 +3,7 @@
             id="1f7d-0c61-7e6a-4cc6"
             name="Bolt Action 3ed"
             battleScribeVersion="2.03"
-            revision="9"
+            revision="10"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
@@ -17,6 +17,9 @@
     <categoryEntry name="Artillery" id="3c3f-de12-7949-45f5" hidden="false"/>
     <categoryEntry name="Armour" id="6912-835d-246f-48a2" hidden="false"/>
     <categoryEntry name="Transport" id="7a12-835d-246f-48a3" hidden="false"/>
+    <categoryEntry name="Period: Early War" id="9e10-0000-0000-0001" hidden="false"/>
+    <categoryEntry name="Period: Mid War" id="9e10-0000-0000-0002" hidden="false"/>
+    <categoryEntry name="Period: Late War" id="9e10-0000-0000-0003" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Rifle Platoon" id="c450-b14b-a141-436f" hidden="false">

@@ -18,5 +18,7 @@ Plików `.ros` i `.rosz` na razie nie wrzucaj — najpierw testujemy tworzenie p
 - dwa gotowe warianty Heer Infantry Squad zastąpiono jednym konfigurowalnym oddziałem;
 - Heer Infantry Squad używa bezpośredniej grupy `Squad Members` 5–10 jak dane 2E: obowiązkowy NCO, 4–9 riflemenów i wymagany wybór Rifle/SMG wewnątrz NCO;
 - opcja LMG automatycznie zastępuje dwóch bazowych riflemenów wpisami `LMG Gunner` i `LMG Loader with rifle`, bez zmiany całkowitej liczebności oddziału;
+- skład drużyny jest prezentowany jako modele: NCO, aktualna liczba riflemenów oraz - po wybraniu - gunner i loader LMG;
+- każda dostępna jednostka ma dopisek okresu oraz techniczne kategorie okresu zgodne z army bookiem;
 - Panzer III Ausf. L/M i Ausf. N są dostępne wyłącznie jako Regular lub Veteran, zgodnie z Armies of Germany: Third Edition;
 - stare wpisy pozostają ukryte, aby wcześniejsze roster files nadal mogły je rozwiązać.
