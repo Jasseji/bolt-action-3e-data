@@ -3,7 +3,7 @@
             id="1f7d-0c61-7e6a-4cc6"
             name="Bolt Action: Third Edition (Minimal DAK)"
             battleScribeVersion="2.03"
-            revision="5"
+            revision="6"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
