@@ -22,6 +22,7 @@ Plików `.ros` i `.rosz` na razie nie wrzucaj — najpierw testujemy tworzenie p
 - modele składu mają przypisaną broń, aby NewRecruit zawsze wyświetlał Riflemenów, LMG Gunnera i Loadera w punktowanym podsumowaniu jednostki;
 - stałe bronie modeli są ukryte w konfiguratorze, Riflemani korzystają z jednego pola 4-9, a sekcja obsługi LMG znajduje się na końcu;
 - stałe bronie są bezpośrednim wyposażeniem modeli jak w danych 2E, dzięki czemu nie tworzą pól wyboru, ale modele pozostają w podsumowaniu; sekcja `Quality (Unit)` sortuje się jako pierwsza;
+- konfiguracja Heer Squad ma wymuszoną kolejność: Unit Quality, NCO, LMG Team, Riflemen i na końcu Squad Options; wspólne bronie mają stałą liczebność 1/1;
 - okres jednostki nie jest dopisywany do jej nazwy; jest widoczny w profilu przez techniczne kategorie zgodne z army bookiem;
 - NCO i Riflemani mają Rifle ustawiony jako wybór domyślny, a opcja LMG Team jest uporządkowana na końcu listy opcji;
 - Panzer III Ausf. L/M i Ausf. N są dostępne wyłącznie jako Regular lub Veteran, zgodnie z Armies of Germany: Third Edition;
