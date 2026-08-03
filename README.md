@@ -20,6 +20,7 @@ Plików `.ros` i `.rosz` na razie nie wrzucaj — najpierw testujemy tworzenie p
 - opcja LMG automatycznie zastępuje dwóch bazowych riflemenów wpisami `LMG Gunner` i `LMG Loader with rifle`, bez zmiany całkowitej liczebności oddziału;
 - skład drużyny jest prezentowany jako modele: NCO, aktualna liczba riflemenów oraz - po wybraniu - gunner i loader LMG;
 - modele składu mają przypisaną broń, aby NewRecruit zawsze wyświetlał Riflemenów, LMG Gunnera i Loadera w punktowanym podsumowaniu jednostki;
-- każda dostępna jednostka ma dopisek okresu oraz techniczne kategorie okresu zgodne z army bookiem;
+- okres jednostki nie jest dopisywany do jej nazwy; jest widoczny w profilu przez techniczne kategorie zgodne z army bookiem;
+- NCO i Riflemani mają Rifle ustawiony jako wybór domyślny, a opcja LMG Team jest uporządkowana na końcu listy opcji;
 - Panzer III Ausf. L/M i Ausf. N są dostępne wyłącznie jako Regular lub Veteran, zgodnie z Armies of Germany: Third Edition;
 - stare wpisy pozostają ukryte, aby wcześniejsze roster files nadal mogły je rozwiązać.
