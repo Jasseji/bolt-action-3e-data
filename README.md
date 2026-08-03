@@ -1,4 +1,4 @@
-# Bolt Action 3E – Configurable DAK v0.4
+# Bolt Action 3ed – Armies of Germany
 
 Poprawka błędu ładowania Army Book w NewRecruit.
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema"
             id="1f7d-0c61-7e6a-4cc6"
-            name="Bolt Action: Third Edition (Minimal DAK)"
+            name="Bolt Action 3ed"
             battleScribeVersion="2.03"
-            revision="8"
+            revision="9"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
