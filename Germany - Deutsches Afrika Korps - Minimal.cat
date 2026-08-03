@@ -1,2 +1,153 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7235-6cbe-5407-4e0f" name="Germany - Deutsches Afrika Korps (Minimal)" gameSystemId="1f7d-0c61-7e6a-4cc6" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" type="catalogue" authorName="Jasseji / ChatGPT" authorUrl="https://github.com/Jasseji/bolt-action-3e-data"><sharedSelectionEntries><selectionEntry type="unit" import="true" name="Platoon Commander (Rifle)" hidden="false" id="1000-0000-0000-0001"><categoryLinks><categoryLink targetId="2b35-7c65-b12a-4aca" id="1100-0000-0000-0001" primary="true" name="Command" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="29" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Heer Infantry Squad – LMG/SMG" hidden="false" id="1000-0000-0000-0002"><categoryLinks><categoryLink targetId="d42d-87f6-d04b-43db" id="1100-0000-0000-0002" primary="true" name="Infantry" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="99" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Heer Infantry Squad – LMG/Rifle" hidden="false" id="1000-0000-0000-0003"><categoryLinks><categoryLink targetId="d42d-87f6-d04b-43db" id="1100-0000-0000-0003" primary="true" name="Infantry" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="99" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Anti-Tank Rifle Team" hidden="false" id="1000-0000-0000-0004"><categoryLinks><categoryLink targetId="bcf5-f270-8171-47b4" id="1100-0000-0000-0004" primary="true" name="Support" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="25" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Platoon Commander (Heavy Weapons)" hidden="false" id="1000-0000-0000-0005"><categoryLinks><categoryLink targetId="2b35-7c65-b12a-4aca" id="1100-0000-0000-0005" primary="true" name="Command" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="34" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Medium Machine Gun Team" hidden="false" id="1000-0000-0000-0006"><categoryLinks><categoryLink targetId="bcf5-f270-8171-47b4" id="1100-0000-0000-0006" primary="true" name="Support" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="50" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Medium Mortar Team" hidden="false" id="1000-0000-0000-0007"><categoryLinks><categoryLink targetId="bcf5-f270-8171-47b4" id="1100-0000-0000-0007" primary="true" name="Support" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="55" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Platoon Commander (Artillery)" hidden="false" id="1000-0000-0000-0008"><categoryLinks><categoryLink targetId="2b35-7c65-b12a-4aca" id="1100-0000-0000-0008" primary="true" name="Command" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="8.8 cm Flak 36/37" hidden="false" id="1000-0000-0000-0009"><categoryLinks><categoryLink targetId="3c3f-de12-7949-45f5" id="1100-0000-0000-0009" primary="true" name="Artillery" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="200" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Sd.Kfz. 251/10 Command Vehicle" hidden="false" id="1000-0000-0000-0010"><categoryLinks><categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0010" primary="true" name="Armour" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="103" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Panzer III Ausf. N" hidden="false" id="1000-0000-0000-0011"><categoryLinks><categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0011" primary="true" name="Armour" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176" /></costs></selectionEntry><selectionEntry type="unit" import="true" name="Panzer III Ausf. L" hidden="false" id="1000-0000-0000-0012"><categoryLinks><categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0012" primary="true" name="Armour" /></categoryLinks><costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176" /></costs></selectionEntry></sharedSelectionEntries><entryLinks><entryLink import="true" name="Platoon Commander (Rifle)" hidden="false" id="1200-0000-0000-0001" type="selectionEntry" targetId="1000-0000-0000-0001" /><entryLink import="true" name="Heer Infantry Squad – LMG/SMG" hidden="false" id="1200-0000-0000-0002" type="selectionEntry" targetId="1000-0000-0000-0002" /><entryLink import="true" name="Heer Infantry Squad – LMG/Rifle" hidden="false" id="1200-0000-0000-0003" type="selectionEntry" targetId="1000-0000-0000-0003" /><entryLink import="true" name="Anti-Tank Rifle Team" hidden="false" id="1200-0000-0000-0004" type="selectionEntry" targetId="1000-0000-0000-0004" /><entryLink import="true" name="Platoon Commander (Heavy Weapons)" hidden="false" id="1200-0000-0000-0005" type="selectionEntry" targetId="1000-0000-0000-0005" /><entryLink import="true" name="Medium Machine Gun Team" hidden="false" id="1200-0000-0000-0006" type="selectionEntry" targetId="1000-0000-0000-0006" /><entryLink import="true" name="Medium Mortar Team" hidden="false" id="1200-0000-0000-0007" type="selectionEntry" targetId="1000-0000-0000-0007" /><entryLink import="true" name="Platoon Commander (Artillery)" hidden="false" id="1200-0000-0000-0008" type="selectionEntry" targetId="1000-0000-0000-0008" /><entryLink import="true" name="8.8 cm Flak 36/37" hidden="false" id="1200-0000-0000-0009" type="selectionEntry" targetId="1000-0000-0000-0009" /><entryLink import="true" name="Sd.Kfz. 251/10 Command Vehicle" hidden="false" id="1200-0000-0000-0010" type="selectionEntry" targetId="1000-0000-0000-0010" /><entryLink import="true" name="Panzer III Ausf. N" hidden="false" id="1200-0000-0000-0011" type="selectionEntry" targetId="1000-0000-0000-0011" /><entryLink import="true" name="Panzer III Ausf. L" hidden="false" id="1200-0000-0000-0012" type="selectionEntry" targetId="1000-0000-0000-0012" /></entryLinks></catalogue>
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema"
+           library="false"
+           id="7235-6cbe-5407-4e0f"
+           name="Germany - Deutsches Afrika Korps (Minimal)"
+           gameSystemId="1f7d-0c61-7e6a-4cc6"
+           gameSystemRevision="3"
+           revision="3"
+           battleScribeVersion="2.03"
+           type="catalogue"
+           authorName="Jasseji / ChatGPT"
+           authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Platoon Commander (Rifle)" hidden="false" id="1000-0000-0000-0001">
+      <categoryLinks><categoryLink targetId="2b35-7c65-b12a-4aca" id="1100-0000-0000-0001" primary="true" name="Command"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="29"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heer Infantry Squad – LMG/SMG" hidden="false" id="1000-0000-0000-0002">
+      <categoryLinks><categoryLink targetId="d42d-87f6-d04b-43db" id="1100-0000-0000-0002" primary="true" name="Infantry"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="99"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heer Infantry Squad – LMG/Rifle" hidden="false" id="1000-0000-0000-0003">
+      <categoryLinks><categoryLink targetId="d42d-87f6-d04b-43db" id="1100-0000-0000-0003" primary="true" name="Infantry"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="99"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Anti-Tank Rifle Team" hidden="false" id="1000-0000-0000-0004">
+      <categoryLinks><categoryLink targetId="bcf5-f270-8171-47b4" id="1100-0000-0000-0004" primary="true" name="Support"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="25"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Platoon Commander (Heavy Weapons)" hidden="false" id="1000-0000-0000-0005">
+      <categoryLinks><categoryLink targetId="2b35-7c65-b12a-4aca" id="1100-0000-0000-0005" primary="true" name="Command"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="34"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Medium Machine Gun Team" hidden="false" id="1000-0000-0000-0006">
+      <categoryLinks><categoryLink targetId="bcf5-f270-8171-47b4" id="1100-0000-0000-0006" primary="true" name="Support"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="50"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Medium Mortar Team" hidden="false" id="1000-0000-0000-0007">
+      <categoryLinks><categoryLink targetId="bcf5-f270-8171-47b4" id="1100-0000-0000-0007" primary="true" name="Support"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="55"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Platoon Commander (Artillery)" hidden="false" id="1000-0000-0000-0008">
+      <categoryLinks><categoryLink targetId="2b35-7c65-b12a-4aca" id="1100-0000-0000-0008" primary="true" name="Command"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="8.8 cm Flak 36/37" hidden="false" id="1000-0000-0000-0009">
+      <categoryLinks><categoryLink targetId="3c3f-de12-7949-45f5" id="1100-0000-0000-0009" primary="true" name="Artillery"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="200"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sd.Kfz. 251/10 Command Vehicle" hidden="false" id="1000-0000-0000-0010">
+      <categoryLinks><categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0010" primary="true" name="Armour"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="103"/></costs>
+    </selectionEntry>
+
+    <!-- Legacy entries remain resolvable for rosters created with revision 2. -->
+    <selectionEntry type="unit" import="true" name="Panzer III Ausf. N" hidden="false" id="1000-0000-0000-0011">
+      <categoryLinks><categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0011" primary="true" name="Armour"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176"/></costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Panzer III Ausf. L" hidden="false" id="1000-0000-0000-0012">
+      <categoryLinks><categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0012" primary="true" name="Armour"/></categoryLinks>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176"/></costs>
+    </selectionEntry>
+
+    <selectionEntry type="unit" import="true" name="Panzer III" hidden="false" id="1000-0000-0000-0013">
+      <categoryLinks>
+        <categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0013" primary="true" name="Armour"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ausführung" hidden="false" collective="false" import="true" id="1300-0000-0000-0001">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1310-0000-0000-0001"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1320-0000-0000-0001"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ausf. L" hidden="false" id="1400-0000-0000-0001">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1410-0000-0000-0001"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" hidden="false" collective="false" import="true" id="1500-0000-0000-0001">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1510-0000-0000-0001"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1520-0000-0000-0001"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Inexperienced" hidden="false" id="1600-0000-0000-0001">
+                      <constraints><constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0001"/></constraints>
+                      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="141"/></costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Regular" hidden="false" id="1600-0000-0000-0002">
+                      <constraints><constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0002"/></constraints>
+                      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176"/></costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="1600-0000-0000-0003">
+                      <constraints><constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0003"/></constraints>
+                      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="211"/></costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0"/></costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ausf. N" hidden="false" id="1400-0000-0000-0002">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1410-0000-0000-0002"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" hidden="false" collective="false" import="true" id="1500-0000-0000-0002">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1510-0000-0000-0002"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1520-0000-0000-0002"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Inexperienced" hidden="false" id="1600-0000-0000-0004">
+                      <constraints><constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0004"/></constraints>
+                      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="141"/></costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Regular" hidden="false" id="1600-0000-0000-0005">
+                      <constraints><constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0005"/></constraints>
+                      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176"/></costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="1600-0000-0000-0006">
+                      <constraints><constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0006"/></constraints>
+                      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="211"/></costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0"/></costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0"/></costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Platoon Commander (Rifle)" hidden="false" id="1200-0000-0000-0001" type="selectionEntry" targetId="1000-0000-0000-0001"/>
+    <entryLink import="true" name="Heer Infantry Squad – LMG/SMG" hidden="false" id="1200-0000-0000-0002" type="selectionEntry" targetId="1000-0000-0000-0002"/>
+    <entryLink import="true" name="Heer Infantry Squad – LMG/Rifle" hidden="false" id="1200-0000-0000-0003" type="selectionEntry" targetId="1000-0000-0000-0003"/>
+    <entryLink import="true" name="Anti-Tank Rifle Team" hidden="false" id="1200-0000-0000-0004" type="selectionEntry" targetId="1000-0000-0000-0004"/>
+    <entryLink import="true" name="Platoon Commander (Heavy Weapons)" hidden="false" id="1200-0000-0000-0005" type="selectionEntry" targetId="1000-0000-0000-0005"/>
+    <entryLink import="true" name="Medium Machine Gun Team" hidden="false" id="1200-0000-0000-0006" type="selectionEntry" targetId="1000-0000-0000-0006"/>
+    <entryLink import="true" name="Medium Mortar Team" hidden="false" id="1200-0000-0000-0007" type="selectionEntry" targetId="1000-0000-0000-0007"/>
+    <entryLink import="true" name="Platoon Commander (Artillery)" hidden="false" id="1200-0000-0000-0008" type="selectionEntry" targetId="1000-0000-0000-0008"/>
+    <entryLink import="true" name="8.8 cm Flak 36/37" hidden="false" id="1200-0000-0000-0009" type="selectionEntry" targetId="1000-0000-0000-0009"/>
+    <entryLink import="true" name="Sd.Kfz. 251/10 Command Vehicle" hidden="false" id="1200-0000-0000-0010" type="selectionEntry" targetId="1000-0000-0000-0010"/>
+    <entryLink import="true" name="Panzer III Ausf. N" hidden="true" id="1200-0000-0000-0011" type="selectionEntry" targetId="1000-0000-0000-0011"/>
+    <entryLink import="true" name="Panzer III Ausf. L" hidden="true" id="1200-0000-0000-0012" type="selectionEntry" targetId="1000-0000-0000-0012"/>
+    <entryLink import="true" name="Panzer III" hidden="false" id="1200-0000-0000-0013" type="selectionEntry" targetId="1000-0000-0000-0013"/>
+  </entryLinks>
+</catalogue>
