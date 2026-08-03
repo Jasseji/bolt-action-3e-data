@@ -3,7 +3,7 @@
             id="1f7d-0c61-7e6a-4cc6"
             name="Bolt Action 3ed"
             battleScribeVersion="2.03"
-            revision="18"
+            revision="19"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
@@ -18,6 +18,14 @@
         <characteristicType name="Weapons" id="9b01-0000-0000-0003"/>
         <characteristicType name="Rules and options" id="9b01-0000-0000-0004"/>
         <characteristicType name="Army Book" id="9b01-0000-0000-0005"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Weapon" id="9b00-0000-0000-0002">
+      <characteristicTypes>
+        <characteristicType name="Range" id="9b02-0000-0000-0001"/>
+        <characteristicType name="Shots" id="9b02-0000-0000-0002"/>
+        <characteristicType name="Pen" id="9b02-0000-0000-0003"/>
+        <characteristicType name="Special Rules" id="9b02-0000-0000-0004"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
