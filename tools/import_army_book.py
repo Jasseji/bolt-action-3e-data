@@ -9,6 +9,7 @@ left untouched.
 from __future__ import annotations
 
 import argparse
+import copy
 import difflib
 import hashlib
 import re
@@ -586,6 +587,226 @@ def add_card(shared: ET.Element, entry_links: ET.Element, card: Card) -> None:
     )
 
 
+def vehicle_variant_family(name: str) -> str | None:
+    """Return the common vehicle name for entries split by Ausf. variants."""
+    match = re.match(r"^(.+?)\s+Ausf\.?\s*.+$", name, re.I)
+    return clean(match.group(1)) if match else None
+
+
+def vehicle_variant_letters(name: str) -> set[str]:
+    """Return the leading Ausf. letter set, used to discard strict duplicates."""
+    match = re.search(r"\bAusf\.?\s*((?:[A-Z]\s*,?\s*)+)", name)
+    if not match:
+        return set()
+    return set(re.findall(r"[A-Z]", match.group(1)))
+
+
+def flatten_vehicle_families(
+    shared: ET.Element, entry_links: ET.Element, generated_ids: set[str],
+) -> None:
+    """Restore hand-authored variants before a repeated import/regroup pass."""
+    for root in list(shared.findall(q("selectionEntry"))):
+        family = root.get("name", "")
+        groups = root.find(q("selectionEntryGroups"))
+        if groups is None:
+            continue
+        variant_group = None
+        for group in groups.findall(q("selectionEntryGroup")):
+            choices = group.find(q("selectionEntries"))
+            if choices is None:
+                continue
+            names = [entry.get("name", "") for entry in choices.findall(q("selectionEntry"))]
+            if group.get("id") == stable_id("vehicle-family-variants", family) or any(
+                re.match(r"^Ausf(?:\.|\b)", name, re.I) for name in names
+            ):
+                variant_group = group
+                break
+        if variant_group is None:
+            continue
+        variants = variant_group.find(q("selectionEntries"))
+        root_categories = root.find(q("categoryLinks"))
+        if variants is not None:
+            for variant in list(variants.findall(q("selectionEntry"))):
+                if variant.get("id") in generated_ids:
+                    continue
+                variant_name = variant.get("name", "")
+                if re.match(r"^Ausf(?:\.|\b)", variant_name, re.I):
+                    variant.set("name", f"{family} {variant_name}")
+                variant.set("type", "unit")
+                variant.set("import", "true")
+                category_links = variant.find(q("categoryLinks"))
+                if category_links is None:
+                    category_links = ET.Element(q("categoryLinks"))
+                    variant.insert(0, category_links)
+                existing_targets = {
+                    link.get("targetId") for link in category_links.findall(q("categoryLink"))
+                }
+                if root_categories is not None:
+                    for root_link in root_categories.findall(q("categoryLink")):
+                        if root_link.get("targetId") in existing_targets:
+                            continue
+                        restored = copy.deepcopy(root_link)
+                        restored.set(
+                            "id",
+                            stable_id(
+                                f"restored-category-{root_link.get('targetId', '')}",
+                                variant.get("name", ""),
+                            ),
+                        )
+                        category_links.append(restored)
+                shared.append(variant)
+        shared.remove(root)
+        for link in list(entry_links.findall(q("entryLink"))):
+            if link.get("targetId") == root.get("id"):
+                entry_links.remove(link)
+
+
+def restore_orphaned_variant_names(shared: ET.Element) -> None:
+    """Repair shortened top-level names left by older grouping passes."""
+    for entry in shared.findall(q("selectionEntry")):
+        if entry.get("type") != "unit" or not re.match(r"^Ausf(?:\.|\b)", entry.get("name", ""), re.I):
+            continue
+        profile = entry.find(f"{q('profiles')}/{q('profile')}")
+        if profile is not None and vehicle_variant_family(profile.get("name", "")):
+            entry.set("name", profile.get("name", ""))
+
+
+def remove_superseded_vehicle_variants(entries: list[ET.Element]) -> list[ET.Element]:
+    """Prefer a combined Army Book card over an older strict-subset variant."""
+    keep: list[ET.Element] = []
+    letter_sets = {entry.get("id", ""): vehicle_variant_letters(entry.get("name", "")) for entry in entries}
+    for entry in entries:
+        letters = letter_sets[entry.get("id", "")]
+        strict_subset = bool(letters) and any(
+            letters < other_letters
+            for other in entries
+            if other is not entry
+            for other_letters in [letter_sets[other.get("id", "")]]
+            if other_letters
+        )
+        same_variant = [
+            other for other in entries
+            if other is not entry and letters and letter_sets[other.get("id", "")] == letters
+        ]
+        entry_score = (
+            entry.get("id") == stable_id("unit", entry.get("name", "")),
+            entry.find(q("profiles")) is not None,
+        )
+        duplicate = any(
+            (
+                other.get("id") == stable_id("unit", other.get("name", "")),
+                other.find(q("profiles")) is not None,
+            ) > entry_score
+            or (
+                (
+                    other.get("id") == stable_id("unit", other.get("name", "")),
+                    other.find(q("profiles")) is not None,
+                ) == entry_score
+                and other.get("id", "") < entry.get("id", "")
+            )
+            for other in same_variant
+        )
+        if not strict_subset and not duplicate:
+            keep.append(entry)
+    return keep
+
+
+def group_vehicle_variants(shared: ET.Element, entry_links: ET.Element) -> tuple[int, int]:
+    """Replace multiple top-level Ausf. cards with one family and a required variant choice."""
+    families: dict[str, list[ET.Element]] = {}
+    for entry in shared.findall(q("selectionEntry")):
+        if entry.get("type") != "unit":
+            continue
+        family = vehicle_variant_family(entry.get("name", ""))
+        if family:
+            families.setdefault(family, []).append(entry)
+
+    grouped = 0
+    removed = 0
+    for family, all_variants in families.items():
+        if len(all_variants) < 2:
+            continue
+        variants = remove_superseded_vehicle_variants(all_variants)
+        removed += len(all_variants) - len(variants)
+        first_index = min(list(shared).index(entry) for entry in all_variants)
+
+        primary_links: list[ET.Element] = []
+        for variant in variants:
+            category_links = variant.find(q("categoryLinks"))
+            if category_links is not None:
+                primary_links.extend(
+                    link for link in category_links.findall(q("categoryLink"))
+                    if link.get("primary") == "true"
+                )
+        primary_targets = {link.get("targetId") for link in primary_links}
+        if len(primary_targets) != 1:
+            raise RuntimeError(f"Vehicle family {family!r} spans multiple primary categories")
+        primary = copy.deepcopy(primary_links[0])
+        primary.set("id", stable_id("vehicle-family-category", family))
+
+        for variant in all_variants:
+            shared.remove(variant)
+            for link in list(entry_links.findall(q("entryLink"))):
+                if link.get("targetId") == variant.get("id"):
+                    entry_links.remove(link)
+
+        root_id = stable_id("vehicle-family", family)
+        root = ET.Element(
+            q("selectionEntry"),
+            {"type": "unit", "import": "true", "name": family, "hidden": "false", "id": root_id},
+        )
+        root_categories = ET.SubElement(root, q("categoryLinks"))
+        root_categories.append(primary)
+        groups = ET.SubElement(root, q("selectionEntryGroups"))
+        group = ET.SubElement(
+            groups, q("selectionEntryGroup"),
+            {"name": "Vehicle variant (Ausf.)", "id": stable_id("vehicle-family-variants", family)},
+        )
+        constraints = ET.SubElement(group, q("constraints"))
+        for kind in ("min", "max"):
+            ET.SubElement(
+                constraints, q("constraint"),
+                {
+                    "type": kind, "value": "1", "field": "selections", "scope": "parent",
+                    "shared": "false", "id": stable_id(f"vehicle-family-variants-{kind}", family),
+                },
+            )
+        choices = ET.SubElement(group, q("selectionEntries"))
+        for variant in variants:
+            variant.set("type", "upgrade")
+            variant.attrib.pop("import", None)
+            variant.set("name", variant.get("name", "")[len(family):].strip())
+            category_links = variant.find(q("categoryLinks"))
+            if category_links is not None:
+                for link in list(category_links.findall(q("categoryLink"))):
+                    if link.get("primary") == "true":
+                        category_links.remove(link)
+            choices.append(variant)
+        add_cost(root, 0)
+        shared.insert(first_index, root)
+
+        category_name = primary.get("name", "")
+        platoon_name, platoon_id = PLATOONS[category_name]
+        link = ET.SubElement(
+            entry_links, q("entryLink"),
+            {
+                "import": "true", "name": family, "hidden": "false",
+                "id": stable_id("vehicle-family-entry-link", family),
+                "type": "selectionEntry", "targetId": root_id,
+            },
+        )
+        links = ET.SubElement(link, q("categoryLinks"))
+        ET.SubElement(
+            links, q("categoryLink"),
+            {
+                "id": stable_id("vehicle-family-platoon-link", family), "name": platoon_name,
+                "hidden": "false", "targetId": platoon_id, "primary": "true",
+            },
+        )
+        grouped += 1
+    return grouped, removed
+
+
 def import_cards(catalogue: Path, cards: list[Card]) -> tuple[int, int]:
     tree = ET.parse(catalogue)
     root = tree.getroot()
@@ -595,11 +816,22 @@ def import_cards(catalogue: Path, cards: list[Card]) -> tuple[int, int]:
         raise RuntimeError("Catalogue lacks sharedSelectionEntries or entryLinks")
 
     generated_ids = {stable_id("unit", card.name) for card in cards}
+    vehicle_variant_names = {
+        heading_key(card.name) for card in cards if vehicle_variant_family(card.name)
+    }
+    flatten_vehicle_families(shared, entry_links, generated_ids)
+    restore_orphaned_variant_names(shared)
     for node in list(shared.findall(q("selectionEntry"))):
-        if node.get("id") in generated_ids:
+        if (
+            node.get("id") in generated_ids
+            or heading_key(node.get("name", "")) in vehicle_variant_names
+        ):
             shared.remove(node)
     for node in list(entry_links.findall(q("entryLink"))):
-        if node.get("targetId") in generated_ids:
+        if (
+            node.get("targetId") in generated_ids
+            or heading_key(node.get("name", "")) in vehicle_variant_names
+        ):
             entry_links.remove(node)
 
     existing_names = {
@@ -616,6 +848,9 @@ def import_cards(catalogue: Path, cards: list[Card]) -> tuple[int, int]:
         add_card(shared, entry_links, card)
         existing_names.add(heading_key(card.name))
         added += 1
+
+    grouped, removed_variants = group_vehicle_variants(shared, entry_links)
+    print(f"Grouped vehicle families: {grouped}; removed superseded variants: {removed_variants}")
 
     root.set("revision", str(int(root.get("revision", "0")) + 1))
     ET.indent(tree, space="  ")

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roster id="dakstarter996" name="DAK Starter Army - 996 pts" battleScribeVersion="2.03" generatedBy="Codex" gameSystemId="1f7d-0c61-7e6a-4cc6" gameSystemName="Bolt Action 3ed" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/rosterSchema">
+  <costs>
+    <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="996" />
+  </costs>
+  <costLimits>
+    <costLimit name="Points" typeId="d4a9-f78c-67cc-4b69" value="1000" />
+  </costLimits>
+  <forces>
+    <force id="dakstarter-force" name="Army List" entryId="c450-b14b-a141-436f" catalogueId="7235-6cbe-5407-4e0f" catalogueRevision="33" catalogueName="Armies of Germany">
+      <selections>
+        <selection id="dakstarter-rifle-command" name="Platoon Commander" entryId="9c10-0000-0000-0001" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-rifle-command-regular" name="Regular" entryId="2130-0000-0000-0002" entryGroupId="2100-0000-0000-0001" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30" /></costs>
+            </selection>
+            <selection id="dakstarter-rifle-command-smg" name="Replace rifle with submachine gun" entryId="2170-0000-0000-0002" entryGroupId="2140-0000-0000-0001" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="4" /></costs>
+            </selection>
+            <selection id="dakstarter-rifle-command-man" name="Additional Regular man" entryId="21a0-0000-0000-0002" entryGroupId="2180-0000-0000-0001" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="44" /></costs>
+          <categories>
+            <category id="dakstarter-rifle-command-cat" entryId="9d10-0000-0000-0001" name="Rifle Platoon" primary="true" />
+            <category id="dakstarter-rifle-command-type" entryId="2b35-7c65-b12a-4aca" name="Command" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-squad-1" name="Heer Infantry Squad" entryId="9c10-0000-0000-0002" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-squad-1-regular" name="Regular" entryId="2230-0000-0000-0002" entryGroupId="2200-0000-0000-0001" number="1" type="upgrade" from="group" />
+            <selection id="dakstarter-squad-1-nco" name="NCO" entryId="2260-0000-0000-0011" entryGroupId="2240-0000-0000-0001" number="1" type="model" from="group">
+              <selections>
+                <selection id="dakstarter-squad-1-nco-smg" name="SMG" entryId="2266-0000-0000-0012" entryGroupId="2263-0000-0000-0011" number="1" type="upgrade" from="group">
+                  <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="4" /></costs>
+                </selection>
+              </selections>
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="14" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-1-lmg-option" name="LMG Team (gunner and loader)" entryId="2280-0000-0000-0003" entryGroupId="2240-0000-0000-0004" number="1" type="upgrade" from="group" />
+            <selection id="dakstarter-squad-1-lmg-gunner" name="LMG Gunner" entryId="2260-0000-0000-0014" entryGroupId="2240-0000-0000-0002" number="1" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="25" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-1-lmg-loader" name="LMG Loader with rifle" entryId="2260-0000-0000-0015" entryGroupId="2240-0000-0000-0002" number="1" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-1-riflemen" name="Rifleman" entryId="2260-0000-0000-0012" entryGroupId="2240-0000-0000-0003" number="7" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="70" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="119" /></costs>
+          <categories>
+            <category id="dakstarter-squad-1-cat" entryId="9d10-0000-0000-0001" name="Rifle Platoon" primary="true" />
+            <category id="dakstarter-squad-1-type" entryId="d42d-87f6-d04b-43db" name="Infantry" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-squad-2" name="Heer Infantry Squad" entryId="9c10-0000-0000-0002" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-squad-2-regular" name="Regular" entryId="2230-0000-0000-0002" entryGroupId="2200-0000-0000-0001" number="1" type="upgrade" from="group" />
+            <selection id="dakstarter-squad-2-nco" name="NCO" entryId="2260-0000-0000-0011" entryGroupId="2240-0000-0000-0001" number="1" type="model" from="group">
+              <selections>
+                <selection id="dakstarter-squad-2-nco-smg" name="SMG" entryId="2266-0000-0000-0012" entryGroupId="2263-0000-0000-0011" number="1" type="upgrade" from="group">
+                  <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="4" /></costs>
+                </selection>
+              </selections>
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="14" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-2-lmg-option" name="LMG Team (gunner and loader)" entryId="2280-0000-0000-0003" entryGroupId="2240-0000-0000-0004" number="1" type="upgrade" from="group" />
+            <selection id="dakstarter-squad-2-lmg-gunner" name="LMG Gunner" entryId="2260-0000-0000-0014" entryGroupId="2240-0000-0000-0002" number="1" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="25" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-2-lmg-loader" name="LMG Loader with rifle" entryId="2260-0000-0000-0015" entryGroupId="2240-0000-0000-0002" number="1" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-2-riflemen" name="Rifleman" entryId="2260-0000-0000-0012" entryGroupId="2240-0000-0000-0003" number="7" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="70" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="119" /></costs>
+          <categories>
+            <category id="dakstarter-squad-2-cat" entryId="9d10-0000-0000-0001" name="Rifle Platoon" primary="true" />
+            <category id="dakstarter-squad-2-type" entryId="d42d-87f6-d04b-43db" name="Infantry" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-squad-3" name="Heer Infantry Squad" entryId="9c10-0000-0000-0002" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-squad-3-regular" name="Regular" entryId="2230-0000-0000-0002" entryGroupId="2200-0000-0000-0001" number="1" type="upgrade" from="group" />
+            <selection id="dakstarter-squad-3-nco" name="NCO" entryId="2260-0000-0000-0011" entryGroupId="2240-0000-0000-0001" number="1" type="model" from="group">
+              <selections>
+                <selection id="dakstarter-squad-3-nco-smg" name="SMG" entryId="2266-0000-0000-0012" entryGroupId="2263-0000-0000-0011" number="1" type="upgrade" from="group">
+                  <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="4" /></costs>
+                </selection>
+              </selections>
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="14" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-3-lmg-option" name="LMG Team (gunner and loader)" entryId="2280-0000-0000-0003" entryGroupId="2240-0000-0000-0004" number="1" type="upgrade" from="group" />
+            <selection id="dakstarter-squad-3-lmg-gunner" name="LMG Gunner" entryId="2260-0000-0000-0014" entryGroupId="2240-0000-0000-0002" number="1" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="25" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-3-lmg-loader" name="LMG Loader with rifle" entryId="2260-0000-0000-0015" entryGroupId="2240-0000-0000-0002" number="1" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" /></costs>
+            </selection>
+            <selection id="dakstarter-squad-3-riflemen" name="Rifleman" entryId="2260-0000-0000-0012" entryGroupId="2240-0000-0000-0003" number="7" type="model" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="70" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="119" /></costs>
+          <categories>
+            <category id="dakstarter-squad-3-cat" entryId="9d10-0000-0000-0001" name="Rifle Platoon" primary="true" />
+            <category id="dakstarter-squad-3-type" entryId="d42d-87f6-d04b-43db" name="Infantry" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-heavy-command" name="Platoon Commander" entryId="9c20-0000-0000-0001" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-heavy-command-regular" name="Regular" entryId="2130-0000-0000-0002" entryGroupId="2100-0000-0000-0001" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30" /></costs>
+          <categories>
+            <category id="dakstarter-heavy-command-cat" entryId="9d10-0000-0000-0002" name="Heavy Weapons Platoon" primary="true" />
+            <category id="dakstarter-heavy-command-type" entryId="2b35-7c65-b12a-4aca" name="Command" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-mmg" name="Medium Machine Gun Team" entryId="9c20-0000-0000-0003" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-mmg-regular" name="Regular" entryId="2330-0000-0000-0062" entryGroupId="2300-0000-0000-0006" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="50" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="50" /></costs>
+          <categories>
+            <category id="dakstarter-mmg-cat" entryId="9d10-0000-0000-0002" name="Heavy Weapons Platoon" primary="true" />
+            <category id="dakstarter-mmg-type" entryId="bcf5-f270-8171-47b4" name="Support" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-mortar" name="Medium Mortar Team" entryId="9c20-0000-0000-0004" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-mortar-regular" name="Regular" entryId="2330-0000-0000-0072" entryGroupId="2300-0000-0000-0007" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="45" /></costs>
+            </selection>
+            <selection id="dakstarter-mortar-spotter" name="Spotter" entryId="2350-0000-0000-0007" entryGroupId="2340-0000-0000-0007" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="55" /></costs>
+          <categories>
+            <category id="dakstarter-mortar-cat" entryId="9d10-0000-0000-0002" name="Heavy Weapons Platoon" primary="true" />
+            <category id="dakstarter-mortar-type" entryId="bcf5-f270-8171-47b4" name="Support" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-artillery-command" name="Platoon Commander" entryId="9c30-0000-0000-0001" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-artillery-command-regular" name="Regular" entryId="2130-0000-0000-0002" entryGroupId="2100-0000-0000-0001" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="30" /></costs>
+          <categories>
+            <category id="dakstarter-artillery-command-cat" entryId="9d10-0000-0000-0003" name="Artillery Platoon" primary="true" />
+            <category id="dakstarter-artillery-command-type" entryId="2b35-7c65-b12a-4aca" name="Command" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-flak-88" name="88MM Flak 36 Dual-Purpose AA/AT Gun" entryId="76cd-35c4-8c95-2a95" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-flak-88-regular" name="Regular" entryId="c968-3097-5a71-66dd" entryGroupId="056b-b7cb-0c5c-8f5a" number="1" type="upgrade" from="group">
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="190" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="190" /></costs>
+          <categories>
+            <category id="dakstarter-flak-88-cat" entryId="9d10-0000-0000-0003" name="Artillery Platoon" primary="true" />
+            <category id="dakstarter-flak-88-type" entryId="3c3f-de12-7949-45f5" name="Artillery" primary="false" />
+          </categories>
+        </selection>
+
+        <selection id="dakstarter-panzer-iii" name="Panzer III" entryId="9bc7-57ec-0265-cc00" number="1" type="unit" from="link">
+          <selections>
+            <selection id="dakstarter-panzer-iii-hj" name="Ausf. H, J" entryId="c498-8ca3-7341-ef0d" entryGroupId="afab-e6af-7bfe-be47" number="1" type="upgrade" from="group">
+              <selections>
+                <selection id="dakstarter-panzer-iii-veteran" name="Veteran" entryId="3a72-c37d-04a5-a068" entryGroupId="3161-d4e2-37fe-9057" number="1" type="upgrade" from="group">
+                  <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="240" /></costs>
+                </selection>
+              </selections>
+              <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="240" /></costs>
+            </selection>
+          </selections>
+          <costs><cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="240" /></costs>
+          <categories>
+            <category id="dakstarter-panzer-iii-cat" entryId="9d10-0000-0000-0004" name="Armoured Platoon" primary="true" />
+            <category id="dakstarter-panzer-iii-type" entryId="6912-835d-246f-48a2" name="Armour" primary="false" />
+          </categories>
+        </selection>
+      </selections>
+      <categories>
+        <category id="dakstarter-force-rifle" entryId="9d10-0000-0000-0001" name="Rifle Platoon" primary="false" />
+        <category id="dakstarter-force-heavy" entryId="9d10-0000-0000-0002" name="Heavy Weapons Platoon" primary="false" />
+        <category id="dakstarter-force-artillery" entryId="9d10-0000-0000-0003" name="Artillery Platoon" primary="false" />
+        <category id="dakstarter-force-armoured" entryId="9d10-0000-0000-0004" name="Armoured Platoon" primary="false" />
+        <category id="dakstarter-force-command" entryId="2b35-7c65-b12a-4aca" name="Command" primary="false" />
+        <category id="dakstarter-force-infantry" entryId="d42d-87f6-d04b-43db" name="Infantry" primary="false" />
+        <category id="dakstarter-force-support" entryId="bcf5-f270-8171-47b4" name="Support" primary="false" />
+        <category id="dakstarter-force-artillery-type" entryId="3c3f-de12-7949-45f5" name="Artillery" primary="false" />
+        <category id="dakstarter-force-armour" entryId="6912-835d-246f-48a2" name="Armour" primary="false" />
+      </categories>
+      <costs>
+        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="996" />
+      </costs>
+    </force>
+  </forces>
+</roster>

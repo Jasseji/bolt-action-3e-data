@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7235-6cbe-5407-4e0f" name="Armies of Germany" gameSystemId="1f7d-0c61-7e6a-4cc6" gameSystemRevision="18" revision="29" battleScribeVersion="2.03" type="catalogue" authorName="Jasseji / ChatGPT" authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7235-6cbe-5407-4e0f" name="Armies of Germany" gameSystemId="1f7d-0c61-7e6a-4cc6" gameSystemRevision="18" revision="33" battleScribeVersion="2.03" type="catalogue" authorName="Jasseji / ChatGPT" authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="9f00-0000-0000-0001">
       <constraints>
@@ -904,98 +904,6 @@
         <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. H, J" hidden="false" id="3000-0000-0000-0003">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="3010-0000-0000-0003" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="9e20-0000-0006-0001" primary="false" name="Period: Early War" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="9e20-0000-0006-0002" primary="false" name="Period: Mid War" />
-      </categoryLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. H, J" hidden="false" id="9b10-0000-0010-0001" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">Medium tank; Damage Value 9+</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">Turret medium anti-tank gun; co-axial MMG; hull MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Armoured all-round vehicle</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="3020-0000-0000-0003">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3030-0000-0000-0003" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3040-0000-0000-0003" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="3050-0000-0000-0031">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="160" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="3050-0000-0000-0032">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="200" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="3050-0000-0000-0033">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="240" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer IV Ausf. B, C, D, E, F" hidden="false" id="3000-0000-0000-0004">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="3010-0000-0000-0004" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="9e20-0000-0007-0001" primary="false" name="Period: Early War" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="9e20-0000-0007-0002" primary="false" name="Period: Mid War" />
-      </categoryLinks>
-      <profiles>
-        <profile name="Panzer IV Ausf. B, C, D, E, F" hidden="false" id="9b10-0000-0011-0001" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">Medium tank; Damage Value 9+</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">Turret light howitzer; co-axial MMG; hull MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Early-war infantry-support tank</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 60</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="3020-0000-0000-0004">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3030-0000-0000-0004" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3040-0000-0000-0004" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="3050-0000-0000-0041">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="140" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="3050-0000-0000-0042">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="175" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="3050-0000-0000-0043">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="210" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kübelwagen" hidden="false" id="3000-0000-0000-0005">
       <categoryLinks>
         <categoryLink targetId="7a12-835d-246f-48a3" id="3010-0000-0000-0005" primary="true" name="Transport" />
@@ -1160,158 +1068,6 @@
             <selectionEntry type="upgrade" name="Veteran" id="3050-0000-0000-0073">
               <costs>
                 <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="32" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. N" hidden="false" id="1000-0000-0000-0011">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0011" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="9e20-0000-0011-0002" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="9e20-0000-0011-0003" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. N" hidden="false" id="9b10-0000-0015-0001" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">Medium tank; Damage Value 9+</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">Turret light howitzer; co-axial MMG; hull MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Close-support Panzer III</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 59</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. L" hidden="false" id="1000-0000-0000-0012">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0012" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="9e20-0000-0012-0002" primary="false" name="Period: Mid War" />
-      </categoryLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. L" hidden="false" id="9b10-0000-0016-0001" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">Medium tank; Damage Value 9+</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">Turret medium anti-tank gun; co-axial MMG; hull MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Schürzen armour skirts available for +10 points</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 59</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="176" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III" hidden="false" id="1000-0000-0000-0013">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="1100-0000-0000-0013" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="9e20-0000-0013-0002" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="9e20-0000-0013-0003" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <profiles>
-        <profile name="Panzer III" hidden="false" id="9b10-0000-0017-0001" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">Configurable medium tank; Damage Value 9+</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">Ausf. L: medium anti-tank gun; Ausf. N: light howitzer; both with MMGs</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Choose Ausf. L or N and Regular or Veteran experience</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 59</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Ausführung" hidden="false" collective="false" import="true" id="1300-0000-0000-0001">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1310-0000-0000-0001" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1320-0000-0000-0001" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ausf. L" hidden="false" id="1400-0000-0000-0001">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1410-0000-0000-0001" />
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Experience" hidden="false" collective="false" import="true" id="1500-0000-0000-0001">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1510-0000-0000-0001" />
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1520-0000-0000-0001" />
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Regular" hidden="false" id="1600-0000-0000-0002">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0002" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="195" />
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="1600-0000-0000-0003">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0003" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="234" />
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Options" hidden="false" collective="false" import="true" id="1700-0000-0000-0001">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Schürzen armour skirts" hidden="false" id="1710-0000-0000-0001">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1720-0000-0000-0001" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" />
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Ausf. N" hidden="false" id="1400-0000-0000-0002">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1410-0000-0000-0002" />
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Experience" hidden="false" collective="false" import="true" id="1500-0000-0000-0002">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1510-0000-0000-0002" />
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1520-0000-0000-0002" />
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Regular" hidden="false" id="1600-0000-0000-0004">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0004" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="175" />
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Veteran" hidden="false" id="1600-0000-0000-0005">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1610-0000-0000-0005" />
-                      </constraints>
-                      <costs>
-                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="210" />
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6486,53 +6242,165 @@
         <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer I Ausf. A, B" hidden="false" id="86cc-9f9d-b248-067b">
+    <selectionEntry type="unit" import="true" name="Panzer I" hidden="false" id="423f-1d28-21f5-b5d3">
       <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="9988-5ac9-a84f-4084" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="042d-94d3-b9fc-24eb" primary="false" name="Period: Early War" />
+        <categoryLink targetId="6912-835d-246f-48a2" id="4d38-6aac-42a5-29d3" primary="true" name="Armour" />
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="a618-3bcf-3547-be39" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="656d-a0cd-c889-a5a7" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer I Ausf. A, B" hidden="false" id="6482-f36a-3620-ab5c" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">7+ (armoured carrier)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">2 turret-mounted MMGs</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Flakpanzer I: Flak, open topped; Flakpanzer I: Replace the turret-mounted MMGs with a light automatic cannon for +5pts</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 56</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="b83c-6a20-08c9-f229">
+        <selectionEntryGroup name="Vehicle variant (Ausf.)" id="0756-69dd-3067-9062">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="93ff-fa5e-41ed-06c8" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="841c-45c5-60e5-3c28" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="23b3-3914-ab1b-3ba9" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="218d-1bbe-52b0-ed9c" />
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="be7e-3aad-e4a1-b2d9">
+            <selectionEntry type="upgrade" name="Ausf. A, B" hidden="false" id="86cc-9f9d-b248-067b">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="042d-94d3-b9fc-24eb" primary="false" name="Period: Early War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="a618-3bcf-3547-be39" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="656d-a0cd-c889-a5a7" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer I Ausf. A, B" hidden="false" id="6482-f36a-3620-ab5c" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">7+ (armoured carrier)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">2 turret-mounted MMGs</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Flakpanzer I: Flak, open topped; Flakpanzer I: Replace the turret-mounted MMGs with a light automatic cannon for +5pts</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 56</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="b83c-6a20-08c9-f229">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="93ff-fa5e-41ed-06c8" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="841c-45c5-60e5-3c28" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="be7e-3aad-e4a1-b2d9">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="56" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="bf92-1bf0-f593-5dea">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="70" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Options" id="b1d3-afe9-b014-70b2">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Flakpanzer I: Replace the turret-mounted MMGs with a light automatic cannon for +5pts" id="a3a2-dec7-1131-070d">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d644-e67a-e95b-707d" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="5" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="56" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="bf92-1bf0-f593-5dea">
+            <selectionEntry type="upgrade" name="Ausf. C" hidden="false" id="8c33-da65-f9f7-2b90">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0003" id="8096-26b6-c6e0-07d1" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="778a-4ca7-3ae2-02a4" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="289f-01df-64a6-40ba" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer I Ausf. C" hidden="false" id="3566-630e-bee4-8ba1" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (Light Tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted EW 141 experimental gun and co-axial MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">EW 141 experimental gun: Although the anti-tank rifle had seen its day, this weapon was quite effective firing a high velocity round combined with a squeeze bore barrel. It has the following profile:; Squeeze-bore: At ranges of up to 18”, its base armour penetration is increased by 1 to a total of +3.; Experimental: The relatively high rate of fire combined with the larger calibre round wore out the barrel quite quickly. When rolling to hit, if a double 1 is rolled, reduce the gun’s Shots value to 1 for the rest of the game.</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 56</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="EW 141" hidden="false" id="b4ae-58f7-0c9a-804e" typeId="9b00-0000-0000-0002" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b02-0000-0000-0001">36"</characteristic>
+                    <characteristic name="Shots" typeId="9b02-0000-0000-0002">2</characteristic>
+                    <characteristic name="Pen" typeId="9b02-0000-0000-0003">+2</characteristic>
+                    <characteristic name="Special Rules" typeId="9b02-0000-0000-0004">Squeeze-bore, experimental</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="63dc-06c0-2089-06a1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fbbe-132a-6222-878c" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="084d-6747-9693-0d76" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="3f79-9732-4448-ba05">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="80" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="77f2-d726-fb8d-d5ff">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="100" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="70" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Options" id="b1d3-afe9-b014-70b2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Flakpanzer I: Replace the turret-mounted MMGs with a light automatic cannon for +5pts" id="a3a2-dec7-1131-070d">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d644-e67a-e95b-707d" />
-              </constraints>
+            <selectionEntry type="upgrade" name="Ausf. F" hidden="false" id="534a-9655-8317-790a">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0002" id="2108-64ce-35d4-d309" primary="false" name="Period: Mid War" />
+                <categoryLink targetId="9e10-0000-0000-0003" id="d78e-4c02-94d8-24a3" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="4273-492c-3626-576c" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="1dee-551d-7514-dc87" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer I Ausf. F" hidden="false" id="fa61-312c-f346-cbb9" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">2 turret-mounted MMGs</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Slow PANZER II The mainstay of the Panzer units in 1939, the light Panzer II was a much-needed improvement over the Panzer I, with better armour and the addition of a 20mm cannon in the turret. The Ausf. A, B, C and F were the main service vehicles, with minor improvements to transmission, running gear and armour. Manufacturing of the Panzer II was halted in 1942, but it continued to be fielded in secondary theatres and by anti-partisan forces throughout the war. A few remained as command vehicles into 1943. The final Ausf. L ‘Luchs’ (‘Lynx’) was a re-working of the older tank to modernise it, and was issued to some Panzer divisions as a fully tracked reconnaissance vehicle where it proved useful. For the invasion of Russia 155 vehicles were manufactured or converted into the Flammpanzer II ‘Flamingo’, mounting two flamethrowers. These proved highly vulnerable because of their volatile fuel inside weak armour and were withdrawn from service in 1942.</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 57</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="d434-8dd0-6985-81cf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6657-fff8-eb99-466f" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="009d-fc0c-244a-82b1" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="bc90-ebfd-5738-e391">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="96" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="3ae0-6174-14fb-b5ac">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="120" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="5" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6592,190 +6460,109 @@
         <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer I Ausf. C" hidden="false" id="8c33-da65-f9f7-2b90">
+    <selectionEntry type="unit" import="true" name="Panzer II" hidden="false" id="adb2-275c-1af1-1e0a">
       <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="1a21-f10a-812d-ea5f" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="8096-26b6-c6e0-07d1" primary="false" name="Period: Late War" />
+        <categoryLink targetId="6912-835d-246f-48a2" id="2384-1d93-48d6-d3a9" primary="true" name="Armour" />
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="778a-4ca7-3ae2-02a4" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="289f-01df-64a6-40ba" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer I Ausf. C" hidden="false" id="3566-630e-bee4-8ba1" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (Light Tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted EW 141 experimental gun and co-axial MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">EW 141 experimental gun: Although the anti-tank rifle had seen its day, this weapon was quite effective firing a high velocity round combined with a squeeze bore barrel. It has the following profile:; Squeeze-bore: At ranges of up to 18”, its base armour penetration is increased by 1 to a total of +3.; Experimental: The relatively high rate of fire combined with the larger calibre round wore out the barrel quite quickly. When rolling to hit, if a double 1 is rolled, reduce the gun’s Shots value to 1 for the rest of the game.</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 56</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="EW 141" hidden="false" id="b4ae-58f7-0c9a-804e" typeId="9b00-0000-0000-0002" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="9b02-0000-0000-0001">36"</characteristic>
-            <characteristic name="Shots" typeId="9b02-0000-0000-0002">2</characteristic>
-            <characteristic name="Pen" typeId="9b02-0000-0000-0003">+2</characteristic>
-            <characteristic name="Special Rules" typeId="9b02-0000-0000-0004">Squeeze-bore, experimental</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="63dc-06c0-2089-06a1">
+        <selectionEntryGroup name="Vehicle variant (Ausf.)" id="d96b-18bf-15a0-53b0">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fbbe-132a-6222-878c" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="084d-6747-9693-0d76" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6b7f-1e24-bd1c-a81e" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cf08-bc1f-775b-6803" />
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="3f79-9732-4448-ba05">
+            <selectionEntry type="upgrade" name="Ausf. A, B, C, F" hidden="false" id="c2f4-5faf-db01-1285">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="8ff1-540b-ed80-db93" primary="false" name="Period: Early War" />
+                <categoryLink targetId="9e10-0000-0000-0002" id="b421-a8d7-3460-9d80" primary="false" name="Period: Mid War" />
+                <categoryLink targetId="9e10-0000-0000-0003" id="0565-7276-a2dc-9636" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="a759-6cd0-d1be-085f" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="1797-dc4c-86aa-181d" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer II Ausf. A, B, C, F" hidden="false" id="f9c8-31bb-1236-0b5b" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M/L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light autocannon with co-axial MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 57</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="f74b-57e1-182b-062d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3f00-9b9e-0ed9-d713" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7391-7fa2-0caf-3c06" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="2190-8ff7-f878-9fb8">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="84" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="c4ba-4f24-b5ed-4872">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="105" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="6b2f-5275-d728-8b77">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="126" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="80" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="77f2-d726-fb8d-d5ff">
+            <selectionEntry type="upgrade" name="Ausf. L Luchs" hidden="false" id="4b13-87ba-b630-1c9e">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0002" id="d6ca-08d6-e727-8d4f" primary="false" name="Period: Mid War" />
+                <categoryLink targetId="9e10-0000-0000-0003" id="3001-44fa-790d-d48f" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="fb09-da2d-9ce9-0121" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="6196-5067-8e4e-7c7f" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer II Ausf. L Luchs" hidden="false" id="6cb0-ddd3-9b7b-aa65" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light autocannon with co-axial MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Recce; Fast</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 57</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="0560-6261-a004-26e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="544b-8140-8791-1027" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2c96-3ad3-6baf-2d3e" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Regular" id="af16-c45e-9a57-2f7a">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="125" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="de77-db0f-9782-4d62">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="150" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="100" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer I Ausf. F" hidden="false" id="534a-9655-8317-790a">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="063a-de3e-8ea2-958e" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="2108-64ce-35d4-d309" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="d78e-4c02-94d8-24a3" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="4273-492c-3626-576c" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="1dee-551d-7514-dc87" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer I Ausf. F" hidden="false" id="fa61-312c-f346-cbb9" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">2 turret-mounted MMGs</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Slow PANZER II The mainstay of the Panzer units in 1939, the light Panzer II was a much-needed improvement over the Panzer I, with better armour and the addition of a 20mm cannon in the turret. The Ausf. A, B, C and F were the main service vehicles, with minor improvements to transmission, running gear and armour. Manufacturing of the Panzer II was halted in 1942, but it continued to be fielded in secondary theatres and by anti-partisan forces throughout the war. A few remained as command vehicles into 1943. The final Ausf. L ‘Luchs’ (‘Lynx’) was a re-working of the older tank to modernise it, and was issued to some Panzer divisions as a fully tracked reconnaissance vehicle where it proved useful. For the invasion of Russia 155 vehicles were manufactured or converted into the Flammpanzer II ‘Flamingo’, mounting two flamethrowers. These proved highly vulnerable because of their volatile fuel inside weak armour and were withdrawn from service in 1942.</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 57</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="d434-8dd0-6985-81cf">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6657-fff8-eb99-466f" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="009d-fc0c-244a-82b1" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="bc90-ebfd-5738-e391">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="96" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="3ae0-6174-14fb-b5ac">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="120" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer II Ausf. A, B, C, F" hidden="false" id="c2f4-5faf-db01-1285">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="368e-043e-8cad-0926" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="8ff1-540b-ed80-db93" primary="false" name="Period: Early War" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="b421-a8d7-3460-9d80" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="0565-7276-a2dc-9636" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="a759-6cd0-d1be-085f" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="1797-dc4c-86aa-181d" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer II Ausf. A, B, C, F" hidden="false" id="f9c8-31bb-1236-0b5b" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light autocannon with co-axial MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 57</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="f74b-57e1-182b-062d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3f00-9b9e-0ed9-d713" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7391-7fa2-0caf-3c06" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="2190-8ff7-f878-9fb8">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="84" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="c4ba-4f24-b5ed-4872">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="105" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="6b2f-5275-d728-8b77">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="126" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer II Ausf. L Luchs" hidden="false" id="4b13-87ba-b630-1c9e">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="60a3-54ff-8a60-ff50" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="d6ca-08d6-e727-8d4f" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="3001-44fa-790d-d48f" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="fb09-da2d-9ce9-0121" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="6196-5067-8e4e-7c7f" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer II Ausf. L Luchs" hidden="false" id="6cb0-ddd3-9b7b-aa65" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light autocannon with co-axial MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Recce; Fast</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 57</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="0560-6261-a004-26e5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="544b-8140-8791-1027" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2c96-3ad3-6baf-2d3e" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Regular" id="af16-c45e-9a57-2f7a">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="125" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="de77-db0f-9782-4d62">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="150" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6829,181 +6616,288 @@
         <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. C, D" hidden="false" id="a1ea-4cdb-a411-ec4e">
+    <selectionEntry type="unit" import="true" name="Panzer III" hidden="false" id="2945-7b84-54c4-1789">
       <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="b002-fb38-fab4-fb2d" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="d361-d015-5efa-a48e" primary="false" name="Period: Early War" />
+        <categoryLink targetId="6912-835d-246f-48a2" id="bbe2-21a6-6443-ae8b" primary="true" name="Armour" />
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="b51d-21f9-6c6e-861b" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="9611-c326-de45-871d" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. C, D" hidden="false" id="6026-0ba2-1206-68d4" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="7ebd-3e5b-0f2a-e1df">
+        <selectionEntryGroup name="Vehicle variant (Ausf.)" id="afab-e6af-7bfe-be47">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fa80-9e29-7ce8-3c55" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7c5a-4c66-510a-f71d" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f0d8-a2a8-485f-60af" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="df35-f03a-87bf-090e" />
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="11ce-f79d-40f0-01da">
+            <selectionEntry type="upgrade" name="Ausf. C, D" hidden="false" id="a1ea-4cdb-a411-ec4e">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="d361-d015-5efa-a48e" primary="false" name="Period: Early War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="b51d-21f9-6c6e-861b" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="9611-c326-de45-871d" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer III Ausf. C, D" hidden="false" id="6026-0ba2-1206-68d4" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="7ebd-3e5b-0f2a-e1df">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fa80-9e29-7ce8-3c55" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7c5a-4c66-510a-f71d" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="11ce-f79d-40f0-01da">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="108" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="695b-d13d-19a0-b8d7">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="135" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="108" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="695b-d13d-19a0-b8d7">
+            <selectionEntry type="upgrade" name="Ausf. E, F" hidden="false" id="b901-6ab2-d8a0-3f15">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="87d5-d4ac-b73e-4ef4" primary="false" name="Period: Early War" />
+                <categoryLink targetId="9e10-0000-0000-0002" id="4d34-8ffd-a518-066b" primary="false" name="Period: Mid War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="5f60-b00e-6c3d-0eb7" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="1944-9578-0ab6-314c" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer III Ausf. E, F" hidden="false" id="62c2-63ce-5e7c-4861" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="0264-e76e-621a-0390">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2535-4729-cd34-7b89" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="297d-cfa4-1a9d-e542" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="1797-24e7-06f7-a9b7">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="108" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="d255-5e2a-99f5-aa2f">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="135" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="135" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. E, F" hidden="false" id="b901-6ab2-d8a0-3f15">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="86bd-555e-8597-43d1" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="87d5-d4ac-b73e-4ef4" primary="false" name="Period: Early War" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="4d34-8ffd-a518-066b" primary="false" name="Period: Mid War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="5f60-b00e-6c3d-0eb7" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="1944-9578-0ab6-314c" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. E, F" hidden="false" id="62c2-63ce-5e7c-4861" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="0264-e76e-621a-0390">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2535-4729-cd34-7b89" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="297d-cfa4-1a9d-e542" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="1797-24e7-06f7-a9b7">
+            <selectionEntry type="upgrade" name="Ausf. G" hidden="false" id="cbea-886f-9225-282c">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="adc4-ee05-146b-7573" primary="false" name="Period: Early War" />
+                <categoryLink targetId="9e10-0000-0000-0002" id="1ad9-c4c6-f10c-029f" primary="false" name="Period: Mid War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="6821-a8b4-2e9b-7766" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="5772-6e3d-1150-96bc" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer III Ausf. G" hidden="false" id="23f4-a0ad-cf1c-3d6a" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted medium anti-tank gun with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="ad70-aa30-6484-70da">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1e6f-cfa4-33f3-0c3f" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ac07-e256-b103-32f6" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="5e1f-10d6-05c8-83f0">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="124" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="eb86-effa-1c79-5038">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="155" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="ef94-3294-f56f-96c2">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="186" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="108" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="d255-5e2a-99f5-aa2f">
+            <selectionEntry type="upgrade" name="Ausf. H, J" hidden="false" id="c498-8ca3-7341-ef0d">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="1e21-5d7b-278e-a714" primary="false" name="Period: Early War" />
+                <categoryLink targetId="9e10-0000-0000-0002" id="eafa-f53a-2b89-4161" primary="false" name="Period: Mid War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="573f-ceac-5f84-2f6f" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="57f7-1012-f7ff-1326" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer III Ausf. H, J" hidden="false" id="3efb-e7f0-bd28-5dab" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted medium anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Reinforced rear armour: The Ausf. H and J treat hits against the rear armour as hits against the side armour (i.e. +1 penetration modifier rather than +2).</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="3161-d4e2-37fe-9057">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="878e-84b5-c785-3ea6" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0d6a-cf8e-28aa-27dc" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="fcbb-e600-e2fc-e074">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="160" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="7a1c-804e-c043-b5c2">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="200" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="3a72-c37d-04a5-a068">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="240" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="135" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. G" hidden="false" id="cbea-886f-9225-282c">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="2a06-babd-beea-8928" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="adc4-ee05-146b-7573" primary="false" name="Period: Early War" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="1ad9-c4c6-f10c-029f" primary="false" name="Period: Mid War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="6821-a8b4-2e9b-7766" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="5772-6e3d-1150-96bc" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. G" hidden="false" id="23f4-a0ad-cf1c-3d6a" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted medium anti-tank gun with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 58</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="ad70-aa30-6484-70da">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1e6f-cfa4-33f3-0c3f" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ac07-e256-b103-32f6" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="5e1f-10d6-05c8-83f0">
+            <selectionEntry type="upgrade" name="Ausf. L, M" hidden="false" id="64c4-ec44-9152-8977">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0002" id="b412-f11c-d954-8e21" primary="false" name="Period: Mid War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="3062-a0f4-1e37-2f1d" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="70c5-16d0-7c5d-8c94" targetId="a300-0000-0000-0003" />
+                <infoLink name="Schurzen Armoured Skirts" hidden="false" type="rule" id="484b-fddb-ab40-fdb1" targetId="a300-0000-0000-0009" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer III Ausf. L, M" hidden="false" id="b7a2-0d6b-9e70-0d7c" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">M</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted medium anti-tank gun with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">The Ausf. L and M may both have Schürzen armour skirts for +10pts</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 59</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="59d6-4759-e881-a812">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fbc0-259f-1b04-95c6" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="648d-253c-fe9a-a877" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Regular" id="90e1-6f23-b63b-f0b0">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="195" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="cfca-f593-bbfb-518c">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="234" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="124" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="eb86-effa-1c79-5038">
+            <selectionEntry type="upgrade" name="Ausf. N" hidden="false" id="ae5b-c11c-81b2-b5d7">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0002" id="6124-ef45-23e9-ac79" primary="false" name="Period: Mid War" />
+                <categoryLink targetId="9e10-0000-0000-0003" id="6ad7-0728-ee3c-5211" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="dc83-4861-65b8-70a3" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="ccd8-2fbc-d17a-b9fb" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer III Ausf. N" hidden="false" id="0f28-d9f5-70bd-6a5b" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light howitzer with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 59</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="d885-90fa-b344-6112">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="9c0b-97ec-2ff2-63d6" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="34cd-39d6-bd4e-2966" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Regular" id="f500-d8cc-9ea0-4ac5">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="175" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="694f-b07e-c0d5-e959">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="210" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="155" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="ef94-3294-f56f-96c2">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="186" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer III Ausf. L, M" hidden="false" id="64c4-ec44-9152-8977">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="58e7-460b-40a2-cde0" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="b412-f11c-d954-8e21" primary="false" name="Period: Mid War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="3062-a0f4-1e37-2f1d" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="70c5-16d0-7c5d-8c94" targetId="a300-0000-0000-0003" />
-        <infoLink name="Schurzen Armoured Skirts" hidden="false" type="rule" id="484b-fddb-ab40-fdb1" targetId="a300-0000-0000-0009" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer III Ausf. L, M" hidden="false" id="b7a2-0d6b-9e70-0d7c" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted medium anti-tank gun with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">The Ausf. L and M may both have Schürzen armour skirts for +10pts</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 59</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="59d6-4759-e881-a812">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fbc0-259f-1b04-95c6" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="648d-253c-fe9a-a877" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Regular" id="90e1-6f23-b63b-f0b0">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="195" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="cfca-f593-bbfb-518c">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="234" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7058,105 +6952,170 @@
         <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer IV Ausf A" hidden="false" id="35fc-15bd-ac6d-648a">
+    <selectionEntry type="unit" import="true" name="Panzer IV" hidden="false" id="6380-6b5f-fc08-4c38">
       <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="e5e9-5ded-963f-bd36" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="88e2-7a6e-4cb4-29d9" primary="false" name="Period: Early War" />
+        <categoryLink targetId="6912-835d-246f-48a2" id="5092-9f18-db1b-aa98" primary="true" name="Armour" />
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="984b-fc2e-8c45-4645" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="86c8-da97-91bc-e36b" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer IV Ausf A" hidden="false" id="8e67-1dd4-76ea-d279" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light howitzer with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 60</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="f70a-f553-d755-cf90">
+        <selectionEntryGroup name="Vehicle variant (Ausf.)" id="3579-1886-cea3-02e5">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f04c-178f-88db-ffc1" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4643-07e0-e06c-aa49" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fe1d-079c-1bfa-c52f" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7469-4a20-d5d6-ce3e" />
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="1704-a1bf-5a56-f6e6">
+            <selectionEntry type="upgrade" name="Ausf A" hidden="false" id="35fc-15bd-ac6d-648a">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="88e2-7a6e-4cb4-29d9" primary="false" name="Period: Early War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="984b-fc2e-8c45-4645" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="86c8-da97-91bc-e36b" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer IV Ausf A" hidden="false" id="8e67-1dd4-76ea-d279" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">8+ (light tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light howitzer with co-axial MMG and 1 forward-facing hull-mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 60</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="f70a-f553-d755-cf90">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f04c-178f-88db-ffc1" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4643-07e0-e06c-aa49" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="1704-a1bf-5a56-f6e6">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="108" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="2f75-ccf1-483a-ac0e">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="135" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="108" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="2f75-ccf1-483a-ac0e">
+            <selectionEntry type="upgrade" name="Ausf. B, C, D, E, F" hidden="false" id="d866-4770-8b9b-b536">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="375f-f54d-3ddd-db46" primary="false" name="Period: Early War" />
+                <categoryLink targetId="9e10-0000-0000-0002" id="5a54-8d0c-6c0d-06d0" primary="false" name="Period: Mid War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="eb63-6aa3-abd1-222d" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="22ab-1a70-12b6-db22" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer IV Ausf. B, C, D, E, F" hidden="false" id="0fab-40a1-79e3-3163" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted light howitzer with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 60</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="3aed-55f8-8722-333b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2681-f02f-ae32-f88f" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a691-4e23-67ea-3739" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="12f5-d529-6b31-a2fc">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="140" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="254e-2ab8-a9c0-b7f7">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="175" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="4dcc-bd7f-9009-fd4d">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="210" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="135" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Panzer IV Ausf. G, H, J" hidden="false" id="9d36-3ef1-f616-8670">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="ff8b-a620-5deb-5cc1" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="52db-803d-8be3-8895" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="7054-61b9-e770-3ac5" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="751a-15a3-2b4e-ec4a" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="02be-7783-fa72-ef5a" targetId="a300-0000-0000-0003" />
-        <infoLink name="Panzer Ace" hidden="false" type="rule" id="65c3-9e31-4a05-90f6" targetId="a300-0000-0000-0004" />
-        <infoLink name="Schurzen Armoured Skirts" hidden="false" type="rule" id="f5a7-20ac-3165-4a9d" targetId="a300-0000-0000-0009" />
-      </infoLinks>
-      <profiles>
-        <profile name="Panzer IV Ausf. G, H, J" hidden="false" id="a90c-a15b-cf1a-e5a2" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted heavy anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Panzer Ace; The Ausf. G, H and J may all have Schürzen armour skirts for +10pts</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 60</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="e0c6-4617-783a-3cf5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3796-bf29-0a22-e71d" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5903-2ce9-2da4-a4a0" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="260c-357d-7a1e-7c07">
+            <selectionEntry type="upgrade" name="Ausf. G, H, J" hidden="false" id="9d36-3ef1-f616-8670">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0002" id="52db-803d-8be3-8895" primary="false" name="Period: Mid War" />
+                <categoryLink targetId="9e10-0000-0000-0003" id="7054-61b9-e770-3ac5" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="751a-15a3-2b4e-ec4a" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="02be-7783-fa72-ef5a" targetId="a300-0000-0000-0003" />
+                <infoLink name="Panzer Ace" hidden="false" type="rule" id="65c3-9e31-4a05-90f6" targetId="a300-0000-0000-0004" />
+                <infoLink name="Schurzen Armoured Skirts" hidden="false" type="rule" id="f5a7-20ac-3165-4a9d" targetId="a300-0000-0000-0009" />
+              </infoLinks>
+              <profiles>
+                <profile name="Panzer IV Ausf. G, H, J" hidden="false" id="a90c-a15b-cf1a-e5a2" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 turret-mounted heavy anti-tank gun with co-axial MMG and 1 forward-facing hull- mounted MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Panzer Ace; The Ausf. G, H and J may all have Schürzen armour skirts for +10pts</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 60</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="e0c6-4617-783a-3cf5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3796-bf29-0a22-e71d" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5903-2ce9-2da4-a4a0" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="260c-357d-7a1e-7c07">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="180" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="2353-8c44-3fac-8139">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="225" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="98d3-7c89-feaa-7bec">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="270" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Options" id="af23-89f2-6240-eba5">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="The Ausf. G, H and J may all have Schürzen armour skirts for +10pts" id="985d-c32d-8a3b-afa0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81fe-72c1-f77b-7c0c" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="180" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="2353-8c44-3fac-8139">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="225" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="98d3-7c89-feaa-7bec">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="270" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Options" id="af23-89f2-6240-eba5">
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="The Ausf. G, H and J may all have Schürzen armour skirts for +10pts" id="985d-c32d-8a3b-afa0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81fe-72c1-f77b-7c0c" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7540,127 +7499,143 @@
         <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="StuG III Ausf. A, B, C, D, E" hidden="false" id="0843-26f8-2f5b-06d2">
+    <selectionEntry type="unit" import="true" name="StuG III" hidden="false" id="be0e-3d0a-32f6-3243">
       <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="7b6c-940d-fa78-3e38" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0001" id="97bf-05ee-972d-766f" primary="false" name="Period: Early War" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="1a88-7083-cab7-343e" primary="false" name="Period: Mid War" />
+        <categoryLink targetId="6912-835d-246f-48a2" id="bd98-7d0e-db40-8531" primary="true" name="Armour" />
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="4fc0-7864-5a65-5ee0" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="6ec4-ac96-5a50-d249" targetId="a300-0000-0000-0003" />
-      </infoLinks>
-      <profiles>
-        <profile name="StuG III Ausf. A, B, C, D, E" hidden="false" id="6d54-7626-89ba-9bc7" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 casement-mounted forward-facing light howitzer</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 65</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="548c-34f5-e27a-b2b9">
+        <selectionEntryGroup name="Vehicle variant (Ausf.)" id="6b7c-ed3b-d1ba-83d4">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a7c3-b650-c390-7b97" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ea1f-938e-2870-f344" />
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8553-cf35-c38e-0cbb" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eb77-47f5-cdcc-c26c" />
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="f195-00f8-27f7-f59a">
+            <selectionEntry type="upgrade" name="Ausf. A, B, C, D, E" hidden="false" id="0843-26f8-2f5b-06d2">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0001" id="97bf-05ee-972d-766f" primary="false" name="Period: Early War" />
+                <categoryLink targetId="9e10-0000-0000-0002" id="1a88-7083-cab7-343e" primary="false" name="Period: Mid War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="4fc0-7864-5a65-5ee0" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="6ec4-ac96-5a50-d249" targetId="a300-0000-0000-0003" />
+              </infoLinks>
+              <profiles>
+                <profile name="StuG III Ausf. A, B, C, D, E" hidden="false" id="6d54-7626-89ba-9bc7" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">E/M</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 casement-mounted forward-facing light howitzer</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">-</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 65</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="548c-34f5-e27a-b2b9">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a7c3-b650-c390-7b97" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ea1f-938e-2870-f344" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="f195-00f8-27f7-f59a">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="124" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="ebf7-330c-9c8f-f932">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="155" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="04bf-a765-f2cb-cd72">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="186" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="124" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="ebf7-330c-9c8f-f932">
+            <selectionEntry type="upgrade" name="Ausf. F , G, H And StuG IV" hidden="false" id="8004-e0fd-0639-5523">
+              <categoryLinks>
+                <categoryLink targetId="9e10-0000-0000-0002" id="b4b4-f721-033a-cba2" primary="false" name="Period: Mid War" />
+                <categoryLink targetId="9e10-0000-0000-0003" id="7c3e-ce90-f2b1-5c51" primary="false" name="Period: Late War" />
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="74c4-4280-69db-e7e0" targetId="a300-0000-0000-0001" />
+                <infoLink name="Initiative Training" hidden="false" type="rule" id="ecbc-1f0c-c75e-c145" targetId="a300-0000-0000-0003" />
+                <infoLink name="Panzer Ace" hidden="false" type="rule" id="d52b-a7d5-2baa-84e5" targetId="a300-0000-0000-0004" />
+                <infoLink name="Schurzen Armoured Skirts" hidden="false" type="rule" id="7bfa-8559-66fe-0a9a" targetId="a300-0000-0000-0009" />
+              </infoLinks>
+              <profiles>
+                <profile name="StuG III Ausf. F , G, H And StuG IV" hidden="false" id="6988-d0a9-ba5d-3d43" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
+                  <characteristics>
+                    <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
+                    <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
+                    <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 casement-mounted forward-facing heavy anti- tank gun and 1 forward-facing MMG</characteristic>
+                    <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Panzer Ace; May upgrade the forward-facing MMG to a MMG with 360-degree arc of fire for +5pts; May add a co-axial MMG to the main gun for +5pts; StuG G and H may have Schürzen armour skirts for +10pts</characteristic>
+                    <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 65</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Experience" id="57e1-143d-4857-510d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="53a0-3c9b-2377-1cb1" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="56d8-1f49-025a-73d1" />
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="Inexperienced" id="895e-f90a-64db-163c">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="172" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Regular" id="f733-bf18-000a-9fef">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="215" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="Veteran" id="9551-bb32-c1c6-869a">
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="258" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Options" id="7f61-7337-4b30-b81e">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" name="May upgrade the forward-facing MMG to a MMG with 360-degree arc of fire for +5pts" id="78f5-a641-b987-40e7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b660-1135-836a-7c02" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="5" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="May add a co-axial MMG to the main gun for +5pts" id="42bd-b621-b194-38b8">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5b46-749a-1d0a-3ff9" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="5" />
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" name="StuG G and H may have Schürzen armour skirts for +10pts" id="9310-3147-c5e3-2cf0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a353-3c07-4503-2ea2" />
+                      </constraints>
+                      <costs>
+                        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" />
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="155" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="04bf-a765-f2cb-cd72">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="186" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="StuG III Ausf. F , G, H And StuG IV" hidden="false" id="8004-e0fd-0639-5523">
-      <categoryLinks>
-        <categoryLink targetId="6912-835d-246f-48a2" id="79dd-0ac0-a9b6-d158" primary="true" name="Armour" />
-        <categoryLink targetId="9e10-0000-0000-0002" id="b4b4-f721-033a-cba2" primary="false" name="Period: Mid War" />
-        <categoryLink targetId="9e10-0000-0000-0003" id="7c3e-ce90-f2b1-5c51" primary="false" name="Period: Late War" />
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Hitler's Buzz-Saw" hidden="false" type="rule" id="74c4-4280-69db-e7e0" targetId="a300-0000-0000-0001" />
-        <infoLink name="Initiative Training" hidden="false" type="rule" id="ecbc-1f0c-c75e-c145" targetId="a300-0000-0000-0003" />
-        <infoLink name="Panzer Ace" hidden="false" type="rule" id="d52b-a7d5-2baa-84e5" targetId="a300-0000-0000-0004" />
-        <infoLink name="Schurzen Armoured Skirts" hidden="false" type="rule" id="7bfa-8559-66fe-0a9a" targetId="a300-0000-0000-0009" />
-      </infoLinks>
-      <profiles>
-        <profile name="StuG III Ausf. F , G, H And StuG IV" hidden="false" id="6988-d0a9-ba5d-3d43" typeId="9b00-0000-0000-0001" typeName="Army Book Unit">
-          <characteristics>
-            <characteristic name="Period" typeId="9b01-0000-0000-0001">M/L</characteristic>
-            <characteristic name="Composition / Type" typeId="9b01-0000-0000-0002">9+ (medium tank)</characteristic>
-            <characteristic name="Weapons" typeId="9b01-0000-0000-0003">1 casement-mounted forward-facing heavy anti- tank gun and 1 forward-facing MMG</characteristic>
-            <characteristic name="Rules and options" typeId="9b01-0000-0000-0004">Panzer Ace; May upgrade the forward-facing MMG to a MMG with 360-degree arc of fire for +5pts; May add a co-axial MMG to the main gun for +5pts; StuG G and H may have Schürzen armour skirts for +10pts</characteristic>
-            <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 65</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Experience" id="57e1-143d-4857-510d">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="53a0-3c9b-2377-1cb1" />
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="56d8-1f49-025a-73d1" />
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="Inexperienced" id="895e-f90a-64db-163c">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="172" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Regular" id="f733-bf18-000a-9fef">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="215" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="Veteran" id="9551-bb32-c1c6-869a">
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="258" />
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Options" id="7f61-7337-4b30-b81e">
-          <selectionEntries>
-            <selectionEntry type="upgrade" name="May upgrade the forward-facing MMG to a MMG with 360-degree arc of fire for +5pts" id="78f5-a641-b987-40e7">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b660-1135-836a-7c02" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="5" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="May add a co-axial MMG to the main gun for +5pts" id="42bd-b621-b194-38b8">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5b46-749a-1d0a-3ff9" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="5" />
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" name="StuG G and H may have Schürzen armour skirts for +10pts" id="9310-3147-c5e3-2cf0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a353-3c07-4503-2ea2" />
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="10" />
+                <cost name="Points" typeId="d4a9-f78c-67cc-4b69" value="0" />
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -13659,21 +13634,6 @@
         <categoryLink id="9c41-0000-0000-0002" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Panzer III Ausf. H, J" hidden="false" id="9c40-0000-0000-0003" type="selectionEntry" targetId="3000-0000-0000-0003">
-      <categoryLinks>
-        <categoryLink id="9c41-0000-0000-0003" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer IV Ausf. B, C, D, E, F" hidden="false" id="9c40-0000-0000-0004" type="selectionEntry" targetId="3000-0000-0000-0004">
-      <categoryLinks>
-        <categoryLink id="9c41-0000-0000-0004" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer III" hidden="false" id="9c40-0000-0000-0005" type="selectionEntry" targetId="1000-0000-0000-0013">
-      <categoryLinks>
-        <categoryLink id="9c41-0000-0000-0005" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Officer" hidden="false" id="67d1-e660-579d-30b3" type="selectionEntry" targetId="322f-0bbc-f08a-0dab">
       <categoryLinks>
         <categoryLink id="753e-e922-97f5-02df" name="Rifle Platoon" hidden="false" targetId="9d10-0000-0000-0001" primary="true" />
@@ -13989,34 +13949,9 @@
         <categoryLink id="f614-c65e-5195-70c9" name="Artillery Platoon" hidden="false" targetId="9d10-0000-0000-0003" primary="true" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Panzer I Ausf. A, B" hidden="false" id="f2e9-bb18-4d19-dc81" type="selectionEntry" targetId="86cc-9f9d-b248-067b">
-      <categoryLinks>
-        <categoryLink id="4372-f1a3-4bc3-fbaa" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Panzerbefehlswagen (Sd.Kfz 265)" hidden="false" id="3eb8-dc5c-3e75-997e" type="selectionEntry" targetId="f1b5-05c5-1a16-b0cd">
       <categoryLinks>
         <categoryLink id="f220-bd4a-f39c-4512" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer I Ausf. C" hidden="false" id="c202-2461-9d55-a876" type="selectionEntry" targetId="8c33-da65-f9f7-2b90">
-      <categoryLinks>
-        <categoryLink id="038f-8285-007f-a8c3" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer I Ausf. F" hidden="false" id="193c-e2af-168a-bca2" type="selectionEntry" targetId="534a-9655-8317-790a">
-      <categoryLinks>
-        <categoryLink id="564f-4a54-ab4d-b576" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer II Ausf. A, B, C, F" hidden="false" id="f18f-7c77-ecdc-df9f" type="selectionEntry" targetId="c2f4-5faf-db01-1285">
-      <categoryLinks>
-        <categoryLink id="e8f8-3a46-9dab-93bb" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer II Ausf. L Luchs" hidden="false" id="7e10-a1b2-9a42-74b6" type="selectionEntry" targetId="4b13-87ba-b630-1c9e">
-      <categoryLinks>
-        <categoryLink id="1c08-d253-c555-e9d2" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Flammpanzer II Flamingo" hidden="false" id="d5ec-e5ef-7973-a59f" type="selectionEntry" targetId="a8fe-3c7d-a00a-321a">
@@ -14024,39 +13959,9 @@
         <categoryLink id="1e45-2b8f-a907-d07e" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Panzer III Ausf. C, D" hidden="false" id="6fa7-5dab-4a38-ea18" type="selectionEntry" targetId="a1ea-4cdb-a411-ec4e">
-      <categoryLinks>
-        <categoryLink id="87a0-540f-5f13-ecd6" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer III Ausf. E, F" hidden="false" id="c82b-65c0-4bdc-7039" type="selectionEntry" targetId="b901-6ab2-d8a0-3f15">
-      <categoryLinks>
-        <categoryLink id="9205-3d26-9d7b-e0eb" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer III Ausf. G" hidden="false" id="e4f6-df35-ec8e-4634" type="selectionEntry" targetId="cbea-886f-9225-282c">
-      <categoryLinks>
-        <categoryLink id="959b-486a-5db1-f220" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer III Ausf. L, M" hidden="false" id="9fcb-2aa9-c768-5306" type="selectionEntry" targetId="64c4-ec44-9152-8977">
-      <categoryLinks>
-        <categoryLink id="b270-33c6-229d-2f45" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
     <entryLink import="true" name="Flammpanzer III" hidden="false" id="affc-84fd-387b-b0c9" type="selectionEntry" targetId="5753-93f1-af1b-cc50">
       <categoryLinks>
         <categoryLink id="c0b8-d7ee-ae25-174a" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer IV Ausf A" hidden="false" id="c306-ad17-8b27-ad09" type="selectionEntry" targetId="35fc-15bd-ac6d-648a">
-      <categoryLinks>
-        <categoryLink id="adba-2e76-6463-e3bd" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Panzer IV Ausf. G, H, J" hidden="false" id="e8b2-be65-7cbf-1909" type="selectionEntry" targetId="9d36-3ef1-f616-8670">
-      <categoryLinks>
-        <categoryLink id="ff6e-6792-26c6-7701" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Panzer 38(T) And 35(T)" hidden="false" id="7a8b-9cc9-a28d-2e17" type="selectionEntry" targetId="cd49-37b9-72e4-7203">
@@ -14092,16 +13997,6 @@
     <entryLink import="true" name="Pantherturm" hidden="false" id="47c2-1926-57c9-2bd5" type="selectionEntry" targetId="0c47-3081-32b0-4c78">
       <categoryLinks>
         <categoryLink id="7bda-7c74-635b-e315" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="StuG III Ausf. A, B, C, D, E" hidden="false" id="08ff-3aa0-8389-e66c" type="selectionEntry" targetId="0843-26f8-2f5b-06d2">
-      <categoryLinks>
-        <categoryLink id="2c26-011e-7951-0dd2" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="StuG III Ausf. F , G, H And StuG IV" hidden="false" id="8f7e-3718-29ab-b1c6" type="selectionEntry" targetId="8004-e0fd-0639-5523">
-      <categoryLinks>
-        <categoryLink id="3d4f-c801-627b-9f17" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="StuH 42" hidden="false" id="c090-6cfd-1f26-a694" type="selectionEntry" targetId="f478-dc14-98ae-f33f">
@@ -14632,6 +14527,31 @@
     <entryLink import="true" name="U304 (F) Half-Track" hidden="false" id="b185-e74f-89e1-c330" type="selectionEntry" targetId="2965-757c-bad9-75c5">
       <categoryLinks>
         <categoryLink id="5a0e-bf5d-2507-f59f" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Panzer I" hidden="false" id="7191-833b-6d16-0c95" type="selectionEntry" targetId="423f-1d28-21f5-b5d3">
+      <categoryLinks>
+        <categoryLink id="a087-3ea2-7665-3d47" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Panzer II" hidden="false" id="fe38-2bae-4d9b-740b" type="selectionEntry" targetId="adb2-275c-1af1-1e0a">
+      <categoryLinks>
+        <categoryLink id="ad6f-1306-3e1e-25cc" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Panzer III" hidden="false" id="9bc7-57ec-0265-cc00" type="selectionEntry" targetId="2945-7b84-54c4-1789">
+      <categoryLinks>
+        <categoryLink id="1a65-dd5f-845c-ec8d" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Panzer IV" hidden="false" id="8aab-95cb-b705-e73d" type="selectionEntry" targetId="6380-6b5f-fc08-4c38">
+      <categoryLinks>
+        <categoryLink id="b14e-8482-c9dd-6494" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="StuG III" hidden="false" id="b81a-a039-259d-40bd" type="selectionEntry" targetId="be0e-3d0a-32f6-3243">
+      <categoryLinks>
+        <categoryLink id="62c6-a444-453c-5249" name="Armoured Platoon" hidden="false" targetId="9d10-0000-0000-0004" primary="true" />
       </categoryLinks>
     </entryLink>
   </entryLinks>
