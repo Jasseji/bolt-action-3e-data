@@ -3,7 +3,7 @@
             id="1f7d-0c61-7e6a-4cc6"
             name="Bolt Action 3ed"
             battleScribeVersion="2.03"
-            revision="22"
+            revision="29"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
@@ -54,4 +54,16 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <sharedRules>
+    <rule name="Hitler's Buzz-Saw" id="a300-0000-0000-0001" hidden="false"><description>German light and medium machine guns fire 1 extra shot. For vehicle-mounted weapons, first halve the number of shots rolled, then add 1.</description></rule>
+    <rule name="Blitzkrieg" id="a300-0000-0000-0002" hidden="false"><description>Regular and Veteran German officers may take 1 additional order die from the bag when using You men, snap to action!</description></rule>
+    <rule name="Initiative Training" id="a300-0000-0000-0003" hidden="false"><description>Regular and Veteran German units ignore the -1 morale penalty for losing their squad or team leader.</description></rule>
+    <rule name="Panzer Ace" id="a300-0000-0000-0004" hidden="false"><description>One eligible Veteran vehicle in the force may be designated a Panzer Ace. Its main gun receives +1 Pen when rolling to damage enemy vehicles and +1 on vehicle damage tables. This does not apply to co-axial weapons.</description></rule>
+    <rule name="Defend the Fatherland!" id="a300-0000-0000-0005" hidden="false"><description>Eligible infantry and artillery may be fielded as Fallschirmjager, Waffen-SS or Gebirgsjager and must apply the relevant quality upgrades, costs and rules.</description></rule>
+    <rule name="Fallschirmjager" id="a300-0000-0000-0006" hidden="false"><description>The unit must be Veteran and must purchase Stubborn for +1 point per man.</description></rule>
+    <rule name="Waffen-SS" id="a300-0000-0000-0007" hidden="false"><description>The unit must purchase Fanatics for +2 points per man. Inexperienced units additionally use the Mixed Quality rule described in Armies of Germany, page 23.</description></rule>
+    <rule name="Gebirgsjager" id="a300-0000-0000-0008" hidden="false"><description>The unit must be Veteran and must purchase Fieldcraft for +1 point per man. It also receives Winter Equipment as described in Armies of Germany, page 23.</description></rule>
+    <rule name="Schurzen Armoured Skirts" id="a300-0000-0000-0009" hidden="false"><description>Anti-tank rifles and shaped charges never receive the +1 penetration bonus for hitting a vehicle with Schurzen in the side.</description></rule>
+    <rule name="Demolition Charges" id="a300-0000-0000-0010" hidden="false"><description>A demolition charge may be placed once per game with a Fire order and detonated after a subsequent Run move. It uses a 3-inch HE template and follows the detailed placement and detonation rules on page 25.</description></rule>
+  </sharedRules>
 </gameSystem>
