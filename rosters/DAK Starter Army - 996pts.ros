@@ -7,7 +7,7 @@
     <costLimit name="Points" typeId="d4a9-f78c-67cc-4b69" value="1000" />
   </costLimits>
   <forces>
-    <force id="dakstarter-force" name="Army List" entryId="c450-b14b-a141-436f" catalogueId="7235-6cbe-5407-4e0f" catalogueRevision="34" catalogueName="Armies of Germany">
+    <force id="dakstarter-force" name="Army List" entryId="c450-b14b-a141-436f" catalogueId="7235-6cbe-5407-4e0f" catalogueRevision="35" catalogueName="Armies of Germany">
       <selections>
         <selection id="dakstarter-rifle-command" name="Platoon Commander" entryId="9c10-0000-0000-0001" number="1" type="unit" from="link">
           <selections>

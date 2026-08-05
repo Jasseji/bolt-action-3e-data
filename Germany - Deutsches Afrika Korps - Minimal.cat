@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7235-6cbe-5407-4e0f" name="Armies of Germany" gameSystemId="1f7d-0c61-7e6a-4cc6" gameSystemRevision="30" revision="34" battleScribeVersion="2.03" type="catalogue" authorName="Jasseji / ChatGPT" authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7235-6cbe-5407-4e0f" name="Armies of Germany" gameSystemId="1f7d-0c61-7e6a-4cc6" gameSystemRevision="30" revision="35" battleScribeVersion="2.03" type="catalogue" authorName="Jasseji / ChatGPT" authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="9f00-0000-0000-0001">
       <constraints>
@@ -9622,7 +9622,15 @@
                     <characteristic name="Army Book" typeId="9b01-0000-0000-0005">p. 65</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Medium machine gun (MMG)" hidden="false" id="adc6-8b93-7a62-0798" typeId="9b00-0000-0000-0002" typeName="Weapon">
+                <profile name="Heavy anti-tank gun" hidden="false" id="cf2f-29e3-02e6-9c1e" typeId="9b00-0000-0000-0002" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9b02-0000-0000-0001">72"</characteristic>
+                    <characteristic name="Shots" typeId="9b02-0000-0000-0002">1</characteristic>
+                    <characteristic name="Pen" typeId="9b02-0000-0000-0003">+6</characteristic>
+                    <characteristic name="Special Rules" typeId="9b02-0000-0000-0004">Team, Fixed, HE (2")</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Medium machine gun (MMG)" hidden="false" id="849e-1721-114f-adc0" typeId="9b00-0000-0000-0002" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="9b02-0000-0000-0001">36"</characteristic>
                     <characteristic name="Shots" typeId="9b02-0000-0000-0002">6</characteristic>

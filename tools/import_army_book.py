@@ -498,6 +498,10 @@ def normalized_weapons_text(text: str | None) -> str:
     embedded = list(re.finditer(r"\bWeapons\s+", value, re.I))
     if embedded:
         value = value[embedded[-1].end():].strip()
+    # PDF extraction sometimes leaves a space after a line-breaking hyphen,
+    # for example "heavy anti- tank gun".  Collapse those artefacts before
+    # matching weapon names so variant-specific profiles are not omitted.
+    value = re.sub(r"(?<=\w)-\s+(?=\w)", "-", value)
     return value or "None"
 
 
