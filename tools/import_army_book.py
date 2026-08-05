@@ -36,6 +36,8 @@ WEAPON_FIELDS = {
     "Range": "9b02-0000-0000-0001", "Shots": "9b02-0000-0000-0002",
     "Pen": "9b02-0000-0000-0003", "Special Rules": "9b02-0000-0000-0004",
 }
+SPECIAL_RULE_PROFILE_TYPE = "9b00-0000-0000-0003"
+SPECIAL_RULE_DESCRIPTION = "9b03-0000-0000-0001"
 POINTS = "d4a9-f78c-67cc-4b69"
 RULE_IDS = {
     "Hitler's Buzz-Saw": "a300-0000-0000-0001",
@@ -88,6 +90,42 @@ SUPPORT_WORDS = (
     "MACHINE GUN TEAM", "PANZERSCHRECK", "ANTI-TANK RIFLE TEAM",
     "FLAMETHROWER TEAM", "GOLIATH", "MORTAR TEAM", "SNIPER TEAM",
 )
+
+# Bolt Action Third Edition Quick Play Sheet, January 2025.  Patterns are
+# deliberately ordered from the most specific weapon names to the broadest.
+WEAPON_STATS: list[tuple[str, str, str, str, str, str]] = [
+    ("Super-heavy anti-tank gun", r"super[- ]heavy anti[- ]tank gun", '84"', "1", "+7", 'Team, Fixed, HE (3")'),
+    ("Heavy anti-tank gun", r"(?<!super[- ])heavy anti[- ]tank gun", '72"', "1", "+6", 'Team, Fixed, HE (2")'),
+    ("Medium anti-tank gun", r"medium anti[- ]tank gun", '60"', "1", "+5", 'Team, Fixed, HE (1")'),
+    ("Low-velocity light anti-tank gun", r"low[- ]velocity light anti[- ]tank gun", '48"', "1", "+3", 'Team, Fixed, HE (1"), Low velocity'),
+    ("Light anti-tank gun", r"(?<!velocity )light anti[- ]tank gun", '48"', "1", "+4", 'Team, Fixed, HE (1")'),
+    ("Panzerschreck", r"panzerschreck|raketenpanzerb[üu]chse", '24"', "1", "+6", "Team, Shaped Charge"),
+    ("Panzerfaust", r"panzerfaust", '12"', "1", "+6", "One-shot, Shaped Charge"),
+    ("Anti-tank rifle", r"anti[- ]tank rifle", '48"', "1", "+2", "Team"),
+    ("Heavy automatic cannon", r"heavy (?:automatic cannon|autocannon)", '72"', "2", "+3", 'Team, Fixed, HE (1")'),
+    ("Light automatic cannon", r"light (?:automatic cannon|autocannon)", '48"', "2", "+2", 'Team, Fixed, HE (1")'),
+    ("Heavy machine gun (HMG)", r"heavy machine gun|\bHMGs?\b", '48"', "6", "+1", "Team, Fixed"),
+    ("Medium machine gun (MMG)", r"medium machine gun|\bMMGs?\b", '36"', "6", "-", "Team, Fixed"),
+    ("Light machine gun (LMG)", r"light machine gun|\bLMGs?\b", '36"', "4", "-", "Team"),
+    ("Assault rifle", r"assault rifles?", '18"', "2", "-", "Assault"),
+    ("Automatic rifle", r"(?<!assault )automatic rifles?", '30"', "2", "-", "-"),
+    ("Submachine gun (SMG)", r"submachine guns?|\bSMGs?\b", '12"', "2", "-", "Assault"),
+    ("Anti-tank grenades", r"anti[- ]tank grenades?", "-", "-", "-", "Tank Hunters"),
+    ("Rifle", r"(?<!anti[- ])\brifles?\b", '24"', "1", "-", "-"),
+    ("Pistol", r"\bpistols?\b", '6"', "1", "-", "-"),
+    ("Heavy mortar", r"heavy mortar|nebelwerfer", '12"-72"', "1", "HE", 'Team, Fixed, Indirect Fire, HE (3")'),
+    ("Medium mortar", r"medium mortar", '12"-60"', "1", "HE", 'Team, Fixed, Indirect Fire, HE (2")'),
+    ("Light mortar", r"light mortar", '12"-36"', "1", "HE", 'Team, Indirect Fire, HE (1")'),
+    ("Heavy howitzer", r"heavy howitzer", '72" (or 42"-84")', "1", "HE", 'Team, Fixed, Howitzer, HE (4")'),
+    ("Medium howitzer", r"medium howitzer", '60" (or 36"-72")', "1", "HE", 'Team, Fixed, Howitzer, HE (3")'),
+    ("Light howitzer", r"light howitzer", '48" (or 30"-60")', "1", "HE", 'Team, Fixed, Howitzer, HE (2")'),
+    ("Flamethrower", r"flamethrowers?|flammenwerfer|einstossflammenwerfer", '6"', "1", "+2", "Team, Flamethrower"),
+    ("Multiple rocket launcher", r"multiple (?:rocket )?launcher", "-", "1", "HE", "Fixed, Indirect Fire, Multiple Launcher"),
+    ("Rocket mortar", r"rocket mortar", "-", "1", "HE", "Fixed, Indirect Fire"),
+    ("Rocket launcher", r"rocket launchers?", "-", "1", "-", "See unit description"),
+    ("Cavalry carbine", r"cavalry carbines?", "-", "-", "-", "See unit description"),
+    ("EW 141", r"EW 141", '36"', "2", "+2", "Squeeze-bore, experimental"),
+]
 
 
 @dataclass
@@ -423,8 +461,6 @@ def add_profile(entry: ET.Element, card: Card) -> None:
     for name, type_id in PROFILE_FIELDS.items():
         node = ET.SubElement(characteristics, q("characteristic"), {"name": name, "typeId": type_id})
         node.text = values[name]
-    if "EW 141" in card.weapons:
-        add_weapon_profile(profiles, card.name, "EW 141", '36"', "2", "+2", "Squeeze-bore, experimental")
 
 
 def add_weapon_profile(
@@ -443,6 +479,128 @@ def add_weapon_profile(
     for field_name, type_id in WEAPON_FIELDS.items():
         node = ET.SubElement(characteristics, q("characteristic"), {"name": field_name, "typeId": type_id})
         node.text = values[field_name]
+
+
+def get_or_create_profiles(entry: ET.Element) -> ET.Element:
+    profiles = entry.find(q("profiles"))
+    if profiles is not None:
+        return profiles
+    profiles = ET.Element(q("profiles"))
+    children = list(entry)
+    insert_before = {q("selectionEntryGroups"), q("entryLinks"), q("costs")}
+    index = next((i for i, child in enumerate(children) if child.tag in insert_before), len(children))
+    entry.insert(index, profiles)
+    return profiles
+
+
+def normalized_weapons_text(text: str | None) -> str:
+    value = clean(text or "None")
+    embedded = list(re.finditer(r"\bWeapons\s+", value, re.I))
+    if embedded:
+        value = value[embedded[-1].end():].strip()
+    return value or "None"
+
+
+def weapon_occurrence_count(text: str, pattern: str) -> int:
+    matches = list(re.finditer(pattern, text, re.I))
+    if not matches:
+        return 0
+    counts: list[int] = []
+    for match in matches:
+        prefix = text[:match.start()]
+        clause = re.split(r",|;|\band\b", prefix, flags=re.I)[-1]
+        numbers = [int(value) for value in re.findall(r"\b(\d+)\b", clause) if int(value) < 20]
+        counts.append(numbers[-1] if numbers else 1)
+    if " or " in text.lower():
+        return max(counts)
+    return sum(counts)
+
+
+def weapon_specs(
+    weapons_text: str | None, category: str,
+) -> list[tuple[str, str, str, str, str]]:
+    text = normalized_weapons_text(weapons_text)
+    if text.lower() in {"none", "-", "unarmed"}:
+        return [("Unarmed", "-", "-", "-", "No weapons listed")]
+    specs: list[tuple[str, str, str, str, str]] = []
+    for display, pattern, range_value, shots, pen, special in WEAPON_STATS:
+        count = weapon_occurrence_count(text, pattern)
+        if not count:
+            continue
+        if display == "Pistol" and "both men have pistols" in text.lower():
+            count = max(count, 2)
+        if display == "Flamethrower" and category in {"Armour", "Transport"}:
+            range_value, special = '12"', "Flamethrower"
+        name = f"{display} (x{count})" if count > 1 else display
+        specs.append((name, range_value, shots, pen, special))
+    if not specs:
+        specs.append(("Weapons as listed", "-", "-", "-", text))
+    return specs
+
+
+def special_rule_name(text: str, index: int) -> str:
+    value = clean(text)
+    for separator in (":", " (", ";"):
+        if separator in value:
+            candidate = value.split(separator, 1)[0].strip()
+            if candidate:
+                return candidate[:80]
+    return (value[:80] or f"Special Rule {index}").strip()
+
+
+def add_special_rule_profile(
+    profiles: ET.Element, seed: str, index: int, name: str, description: str,
+) -> None:
+    profile = ET.SubElement(
+        profiles, q("profile"),
+        {
+            "name": name, "hidden": "false", "id": stable_id(f"special-rule-{index}", seed),
+            "typeId": SPECIAL_RULE_PROFILE_TYPE, "typeName": "Special Rule",
+        },
+    )
+    characteristics = ET.SubElement(profile, q("characteristics"))
+    node = ET.SubElement(
+        characteristics, q("characteristic"),
+        {"name": "Description", "typeId": SPECIAL_RULE_DESCRIPTION},
+    )
+    node.text = description
+
+
+def add_detail_profiles(
+    entry: ET.Element, seed: str, weapons_text: str | None,
+    rule_texts: list[str], category: str,
+) -> None:
+    profiles = get_or_create_profiles(entry)
+    for profile in list(profiles.findall(q("profile"))):
+        if profile.get("typeName") in {"Weapon", "Special Rule"}:
+            profiles.remove(profile)
+
+    existing_weapon_names = {
+        re.sub(r"\s*\(x\d+\)$", "", profile.get("name", ""), flags=re.I).casefold()
+        for descendant in entry.iter(q("profiles"))
+        for profile in descendant.findall(q("profile"))
+        if profile.get("typeName") == "Weapon"
+    }
+    for index, (name, range_value, shots, pen, special) in enumerate(
+        weapon_specs(weapons_text, category), 1
+    ):
+        base_name = re.sub(r"\s*\(x\d+\)$", "", name, flags=re.I).casefold()
+        if base_name in existing_weapon_names:
+            continue
+        add_weapon_profile(
+            profiles, f"{seed}-details-{index}", name, range_value, shots, pen, special
+        )
+
+    cleaned_rules = [clean(rule) for rule in rule_texts if clean(rule) not in {"", "-", "None"}]
+    if not cleaned_rules:
+        cleaned_rules = ["No special rules listed for this unit."]
+    for index, rule in enumerate(cleaned_rules, 1):
+        name = "No special rules" if rule.startswith("No special rules") else special_rule_name(rule, index)
+        add_special_rule_profile(profiles, seed, index, name, rule)
+
+
+def add_card_detail_profiles(entry: ET.Element, card: Card) -> None:
+    add_detail_profiles(entry, card.name, card.weapons, card.rules, card.category)
 
 
 def add_option_weapon_profiles(choice: ET.Element, card: Card, index: int, option: str) -> None:
@@ -509,6 +667,7 @@ def add_card(shared: ET.Element, entry_links: ET.Element, card: Card) -> None:
             },
         )
     add_profile(entry, card)
+    add_card_detail_profiles(entry, card)
 
     groups = ET.SubElement(entry, q("selectionEntryGroups"))
     prices = experience_prices(card.cost)
@@ -807,6 +966,77 @@ def group_vehicle_variants(shared: ET.Element, entry_links: ET.Element) -> tuple
     return grouped, removed
 
 
+def profile_characteristic(profile: ET.Element, name: str) -> str:
+    characteristics = profile.find(q("characteristics"))
+    if characteristics is None:
+        return ""
+    for characteristic in characteristics.findall(q("characteristic")):
+        if characteristic.get("name") == name:
+            return clean(characteristic.text or "")
+    return ""
+
+
+def fallback_weapons_for_name(name: str) -> str:
+    key = heading_key(name)
+    if "PLATOONCOMMANDER" in key or "HEERINFANTRYSQUAD" in key:
+        return "Rifles"
+    if "MACHINEGUN" in key or "MMG" in key:
+        return "1 Medium machine gun"
+    if "MORTAR" in key:
+        return "1 Medium mortar"
+    if "ANTITANKRIFLE" in key:
+        return "1 anti-tank rifle"
+    return "None"
+
+
+def enrich_remaining_unit_details(shared: ET.Element) -> None:
+    """Guarantee weapon and special-rule detail profiles on every visible unit."""
+    for entry in shared.findall(q("selectionEntry")):
+        if entry.get("type") != "unit":
+            continue
+        has_weapon = any(
+            profile.get("typeName") == "Weapon" for profile in entry.iter(q("profile"))
+        )
+        has_special = any(
+            profile.get("typeName") == "Special Rule" for profile in entry.iter(q("profile"))
+        )
+        if has_weapon and has_special:
+            continue
+
+        profiles = entry.find(q("profiles"))
+        army_profile = None if profiles is None else next(
+            (
+                profile for profile in profiles.findall(q("profile"))
+                if profile.get("typeName") == "Army Book Unit"
+            ),
+            None,
+        )
+        weapons_text = (
+            profile_characteristic(army_profile, "Weapons")
+            if army_profile is not None else fallback_weapons_for_name(entry.get("name", ""))
+        )
+        rules_text = (
+            profile_characteristic(army_profile, "Rules and options")
+            if army_profile is not None else ""
+        )
+        category_links = entry.find(q("categoryLinks"))
+        category = "Infantry"
+        if category_links is not None:
+            primary = next(
+                (
+                    link for link in category_links.findall(q("categoryLink"))
+                    if link.get("primary") == "true"
+                ),
+                None,
+            )
+            if primary is not None:
+                category = primary.get("name", category)
+        add_detail_profiles(
+            entry, entry.get("name", "Unit"), weapons_text,
+            [rules_text] if rules_text and rules_text != "-" else [], category,
+        )
+
+
 def import_cards(catalogue: Path, cards: list[Card]) -> tuple[int, int]:
     tree = ET.parse(catalogue)
     root = tree.getroot()
@@ -834,24 +1064,28 @@ def import_cards(catalogue: Path, cards: list[Card]) -> tuple[int, int]:
         ):
             entry_links.remove(node)
 
-    existing_names = {
-        heading_key(node.get("name", ""))
+    existing_entries = {
+        heading_key(node.get("name", "")): node
         for node in shared.findall(q("selectionEntry"))
         if node.get("type") == "unit"
     }
     added = 0
     skipped = 0
     for card in cards:
-        if heading_key(card.name) in existing_names:
+        key = heading_key(card.name)
+        if key in existing_entries:
+            add_card_detail_profiles(existing_entries[key], card)
             skipped += 1
             continue
         add_card(shared, entry_links, card)
-        existing_names.add(heading_key(card.name))
+        existing_entries[key] = shared.findall(q("selectionEntry"))[-1]
         added += 1
 
     grouped, removed_variants = group_vehicle_variants(shared, entry_links)
+    enrich_remaining_unit_details(shared)
     print(f"Grouped vehicle families: {grouped}; removed superseded variants: {removed_variants}")
 
+    root.set("gameSystemRevision", "30")
     root.set("revision", str(int(root.get("revision", "0")) + 1))
     ET.indent(tree, space="  ")
     tree.write(catalogue, encoding="utf-8", xml_declaration=True)

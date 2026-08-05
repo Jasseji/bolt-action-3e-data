@@ -3,7 +3,7 @@
             id="1f7d-0c61-7e6a-4cc6"
             name="Bolt Action 3ed"
             battleScribeVersion="2.03"
-            revision="29"
+            revision="30"
             type="gameSystem"
             authorName="Jasseji / ChatGPT"
             authorUrl="https://github.com/Jasseji/bolt-action-3e-data">
@@ -26,6 +26,11 @@
         <characteristicType name="Shots" id="9b02-0000-0000-0002"/>
         <characteristicType name="Pen" id="9b02-0000-0000-0003"/>
         <characteristicType name="Special Rules" id="9b02-0000-0000-0004"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Special Rule" id="9b00-0000-0000-0003">
+      <characteristicTypes>
+        <characteristicType name="Description" id="9b03-0000-0000-0001"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
